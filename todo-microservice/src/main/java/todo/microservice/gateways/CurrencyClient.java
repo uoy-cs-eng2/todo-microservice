@@ -26,7 +26,7 @@ import jakarta.validation.constraints.Pattern;
 
 @CircuitBreaker
 @Validated
-@Client("${currency.url:`https://cdn.jsdelivr.net/npm/@fawazahmed0`}")
+@Client("currency")
 public interface CurrencyClient {
 
 	String DATE_PATTERN = "[0-9]{4}-[0-2]{2}-[0-2]{2}|latest";
