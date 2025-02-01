@@ -24,42 +24,6 @@ import todo.microservice.domain.ToDoItem;
  * Represents a request to update a specific {@link ToDoItem}.
  */
 @Serdeable
-public class ListItemUpdateDTO {
-
-	private Long listId;
-	private String title, body;
-	private LocalDateTime timestamp;
-
-	public Long getListId() {
-		return listId;
-	}
-
-	public void setListId(Long listId) {
-		this.listId = listId;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getBody() {
-		return body;
-	}
-
-	public void setBody(String body) {
-		this.body = body;
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
-	}
+public record ListItemUpdateDTO(Long listId, String title, String body, LocalDateTime timestamp) {
 
 }

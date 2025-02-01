@@ -29,6 +29,7 @@ import io.micronaut.http.annotation.Put;
 import io.micronaut.http.annotation.QueryValue;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import todo.microservice.ToDoConfiguration;
@@ -38,6 +39,7 @@ import todo.microservice.repositories.ToDoItemRepository;
 import todo.microservice.services.ListItemServices;
 import todo.microservice.dto.ListItemUpdateDTO;
 
+@Tag(name="items")
 @ExecuteOn(TaskExecutors.BLOCKING)
 @Controller(ToDoItemController.PREFIX)
 public class ToDoItemController {
@@ -77,7 +79,7 @@ public class ToDoItemController {
 		return itemServices.update(
 			item, update,
 			() -> HttpResponse.badRequest(String.format(
-					"Could not update item %d: list %d does not exist", id, update.getListId()
+					"Could not update item %d: list %d does not exist", id, update.listId()
 				)),
 			() -> {
 				kafkaClient.itemUpdated(id, item);

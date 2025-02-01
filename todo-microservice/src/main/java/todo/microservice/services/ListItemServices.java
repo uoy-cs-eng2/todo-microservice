@@ -75,21 +75,21 @@ public class ListItemServices {
 	}
 
 	public <T> T update(ToDoItem item, ListItemUpdateDTO update, Supplier<T> listNotFound, Supplier<T> allOk) {
-		if (update.getListId() != null) {
-			Optional<ToDoList> optList = listRepo.findById(update.getListId());
+		if (update.listId() != null) {
+			Optional<ToDoList> optList = listRepo.findById(update.listId());
 			if (optList.isEmpty()) {
 				return listNotFound.get();
 			}
 			item.setList(optList.get());
 		}
-		if (update.getTitle() != null) {
-			item.setTitle(update.getTitle());
+		if (update.title() != null) {
+			item.setTitle(update.title());
 		}
-		if (update.getBody() != null) {
-			item.setBody(update.getBody());
+		if (update.body() != null) {
+			item.setBody(update.body());
 		}
-		if (update.getTimestamp() != null) {
-			item.setTimestamp(update.getTimestamp());
+		if (update.timestamp() != null) {
+			item.setTimestamp(update.timestamp());
 		}
 		repo.save(item);
 

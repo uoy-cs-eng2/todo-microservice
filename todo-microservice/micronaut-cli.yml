@@ -3,4 +3,4 @@ defaultPackage: todo.microservice
 testFramework: junit
 sourceLanguage: java
 buildTool: gradle
-features: [app-name, data, data-jpa, flyway, gradle, http-client-test, java, java-application, jdbc-hikari, junit, kafka, kafka-streams, logback, mariadb, micronaut-aot, micronaut-build, micronaut-http-validation, netty-server, openapi, properties, readme, retry, serialization-jackson, shade, static-resources, swagger-ui, test-resources, validation]
+features: [app-name, data, data-jpa, flyway, gradle, http-client-test, java, java-application, jdbc-hikari, junit, kafka, logback, mariadb, micronaut-aot, micronaut-build, micronaut-http-validation, netty-server, openapi, properties, readme, retry, serialization-jackson, shade, static-resources, swagger-ui, test-resources, validation]

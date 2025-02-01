@@ -19,39 +19,6 @@ import io.micronaut.serde.annotation.Serdeable;
 import todo.microservice.domain.ToDoItem;
 
 @Serdeable
-public class ItemChangeEvent {
-
-	private ChangeType type;
-	private ToDoItem item;
-
-	public ItemChangeEvent() {
-		// no-op
-	}
-
-	public ItemChangeEvent(ChangeType type, ToDoItem item) {
-		this.type = type;
-		this.item = item;
-	}
-
-	public ChangeType getType() {
-		return type;
-	}
-
-	public void setType(ChangeType type) {
-		this.type = type;
-	}
-
-	public ToDoItem getItem() {
-		return item;
-	}
-
-	public void setItem(ToDoItem item) {
-		this.item = item;
-	}
-
-	@Override
-	public String toString() {
-		return "ItemChangeEvent [type=" + type + ", item=" + item + "]";
-	}
+public record ItemChangeEvent(ChangeType type, ToDoItem item) {
 
 }

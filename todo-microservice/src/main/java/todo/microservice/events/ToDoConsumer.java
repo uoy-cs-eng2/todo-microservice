@@ -20,7 +20,10 @@ import io.micronaut.configuration.kafka.annotation.KafkaListener;
 import io.micronaut.configuration.kafka.annotation.Topic;
 
 /**
- * Example Kafka consumer based on the change events.
+ * Example Kafka consumer based on the change events, to
+ * show that we're producing them as items and lists change.
+ * We'll do metrics in a separate Micronaut project, as an
+ * example of a loosely coupled metrics microservice.
  */
 @KafkaListener
 public class ToDoConsumer {

@@ -25,35 +25,7 @@ import java.time.LocalDateTime;
  * Represents a request to create a {@link ToDoItem} within a {@link ToDoList}.
  */
 @Serdeable
-public class ListItemCreateDTO {
-
-	private String title, body;
-	private LocalDateTime timestamp;
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getBody() {
-		return body;
-	}
-
-	public void setBody(String body) {
-		this.body = body;
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
-	}
-
+public record ListItemCreateDTO(String title, String body, LocalDateTime timestamp) {
 	/**
 	 * Creates the item from this request, without saving it to the database.
 	 * Saving to the database is left up to the caller.

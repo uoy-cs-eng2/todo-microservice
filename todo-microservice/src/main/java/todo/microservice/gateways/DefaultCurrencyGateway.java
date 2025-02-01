@@ -34,7 +34,7 @@ import io.micronaut.core.annotation.Creator;
 import jakarta.inject.Singleton;
 
 /**
- * Gateway object for the Currency API by fawazahmed0 on <a href="https://github.com/fawazahmed0/currency-api">GitHub</a>.
+ * Gateway object for the Currency Exchange Rates API by fawazahmed0 on <a href="https://github.com/fawazahmed0/exchange-api">GitHub</a>.
  */
 @Singleton
 public class DefaultCurrencyGateway implements CurrencyGateway {

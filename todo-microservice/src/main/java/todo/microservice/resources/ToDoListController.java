@@ -32,6 +32,7 @@ import io.micronaut.http.annotation.Put;
 import io.micronaut.http.annotation.QueryValue;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import todo.microservice.ToDoConfiguration;
@@ -47,6 +48,7 @@ import todo.microservice.services.ListItemServices;
 /**
  * RESTful controller for to-do lists.
  */
+@Tag(name="lists")
 @ExecuteOn(TaskExecutors.BLOCKING)
 @Controller(ToDoListController.PREFIX)
 public class ToDoListController {
@@ -197,11 +199,11 @@ public class ToDoListController {
 	}
 
 	@Transactional
-	@Post(value = "/{listId}/items", produces = MediaType.TEXT_PLAIN)
-	public HttpResponse<String> addItem(long listId, @Body ListItemCreateDTO item) {
-		Optional<ToDoList> list = repo.findById(listId);
+	@Post(value = "/{id}/items", produces = MediaType.TEXT_PLAIN)
+	public HttpResponse<String> addItem(long id, @Body ListItemCreateDTO item) {
+		Optional<ToDoList> list = repo.findById(id);
 		if (list.isEmpty()) {
-			return HttpResponse.notFound("Could not find list with ID " + listId);
+			return HttpResponse.notFound("Could not find list with ID " + id);
 		}
 		return addItem(item.createItem(), list.get());
 	}

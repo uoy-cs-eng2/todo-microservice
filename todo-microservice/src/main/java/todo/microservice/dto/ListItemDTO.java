@@ -25,48 +25,6 @@ import io.micronaut.serde.annotation.Serdeable;
  * is no point in resending the information about which list they belong to.
  */
 @Serdeable
-@Introspected
-public class ListItemDTO {
-
-	private Long id;
-	private LocalDateTime timestamp;
-	private String title;
-	private String body;
-
-	public ListItemDTO() {
-		// nothing to do
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
-
-	public void setTimestamp(LocalDateTime timestamp) {
-		this.timestamp = timestamp;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getBody() {
-		return body;
-	}
-
-	public void setBody(String body) {
-		this.body = body;
-	}
+public record ListItemDTO(Long id, LocalDateTime timestamp, String title, String body) {
 
 }
