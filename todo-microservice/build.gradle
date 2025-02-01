@@ -76,5 +76,5 @@ micronaut {
 }
 
 tasks.named("dockerfile") {
-  baseImage = "eclipse-temurin:17-alpine"
+  baseImage = "eclipse-temurin:17-focal"
 }
