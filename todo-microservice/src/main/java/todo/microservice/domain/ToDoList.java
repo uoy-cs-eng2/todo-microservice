@@ -15,6 +15,7 @@
  */
 package todo.microservice.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import io.micronaut.serde.annotation.Serdeable;
@@ -32,6 +33,7 @@ public class ToDoList {
 	@Column
 	private String name;
 
+	@JsonIgnore
 	@OneToMany(mappedBy = "list", cascade = CascadeType.ALL)
 	private List<ToDoItem> items;
 
@@ -53,6 +55,14 @@ public class ToDoList {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public List<ToDoItem> getItems() {
+		return items;
+	}
+
+	public void setItems(List<ToDoItem> items) {
+		this.items = items;
 	}
 
 	@Override

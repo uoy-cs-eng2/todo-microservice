@@ -16,13 +16,11 @@
 package todo.microservice.domain;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 
 import io.micronaut.serde.annotation.Serdeable;
 
@@ -34,7 +32,7 @@ public class ToDoItem {
 	@GeneratedValue
 	private Long id;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne
 	private ToDoList list;
 
 	@Column
@@ -45,6 +43,10 @@ public class ToDoItem {
 
 	@Column
 	private String body;
+
+	@JsonIgnore
+	@ManyToMany
+	private Set<User> users = new HashSet<>();
 
 	public ToDoItem() {
 		// nothing to do
@@ -88,6 +90,14 @@ public class ToDoItem {
 
 	public void setBody(String body) {
 		this.body = body;
+	}
+
+	public Set<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(Set<User> users) {
+		this.users = users;
 	}
 
 	@Override

@@ -44,4 +44,6 @@ public interface ToDoItemRepository extends PageableRepository<ToDoItem, Long> {
 
 	boolean existsByListId(long id);
 
+	Page<ToDoItem> findByUsersId(long id, Pageable pageable);
+
 }

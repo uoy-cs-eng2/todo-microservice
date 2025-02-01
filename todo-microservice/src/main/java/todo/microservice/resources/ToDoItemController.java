@@ -15,27 +15,29 @@
  */
 package todo.microservice.resources;
 
+import java.util.List;
 import java.util.Optional;
 
+import io.micronaut.core.annotation.NonNull;
 import io.micronaut.data.model.Page;
 import io.micronaut.data.model.Pageable;
 import io.micronaut.http.HttpResponse;
+import io.micronaut.http.HttpStatus;
 import io.micronaut.http.MediaType;
-import io.micronaut.http.annotation.Body;
-import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Delete;
-import io.micronaut.http.annotation.Get;
-import io.micronaut.http.annotation.Put;
-import io.micronaut.http.annotation.QueryValue;
+import io.micronaut.http.annotation.*;
+import io.micronaut.http.exceptions.HttpStatusException;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
+import jakarta.validation.constraints.Min;
 import todo.microservice.ToDoConfiguration;
 import todo.microservice.domain.ToDoItem;
+import todo.microservice.domain.User;
 import todo.microservice.events.ToDoProducer;
 import todo.microservice.repositories.ToDoItemRepository;
+import todo.microservice.repositories.UsersRepository;
 import todo.microservice.services.ListItemServices;
 import todo.microservice.dto.ListItemUpdateDTO;
 
@@ -49,6 +51,9 @@ public class ToDoItemController {
 	private ToDoItemRepository repo;
 
 	@Inject
+	private UsersRepository usersRepository;
+
+	@Inject
 	private ListItemServices itemServices;
 
 	@Inject
@@ -58,18 +63,18 @@ public class ToDoItemController {
 	private ToDoProducer kafkaClient;
 
 	@Get("/{?page}")
-	Page<ToDoItem> list(@QueryValue(defaultValue="0") int page) {
+	public Page<ToDoItem> list(@QueryValue(defaultValue="0") int page) {
 		return repo.findAll(Pageable.from(page, config.getPageSize()));
 	}
 
 	@Get("/{id}")
-	ToDoItem get(long id) {
+	public ToDoItem get(long id) {
 		return repo.findById(id).orElse(null);
 	}
 
 	@Transactional
 	@Put(value = "/{id}", produces = MediaType.TEXT_PLAIN)
-	HttpResponse<String> update(long id, @Body ListItemUpdateDTO update) {
+	public HttpResponse<String> update(long id, @Body ListItemUpdateDTO update) {
 		Optional<ToDoItem> optItem = repo.findById(id);
 		if (optItem.isEmpty()) {
 			return null;
@@ -90,7 +95,7 @@ public class ToDoItemController {
 
 	@Transactional
 	@Delete(value = "/{id}", produces = MediaType.TEXT_PLAIN)
-	HttpResponse<String> delete(long id) {
+	public HttpResponse<String> delete(long id) {
 		Optional<ToDoItem> optItem = repo.findById(id);
 		if (optItem.isEmpty()) {
 			return null;
@@ -102,7 +107,66 @@ public class ToDoItemController {
 		return HttpResponse.ok(String.format("Item with ID %d was deleted successfully", id));
 	}
 
-	public static String generateURL(ToDoItem item) {
+	@Transactional
+	@Get("/{id}/users{?page}")
+	public List<User> getUsers(@PathVariable long id, @QueryValue(defaultValue = "0") @Min(0) int page) {
+		if (!repo.existsById(id)) {
+			throw new HttpStatusException(HttpStatus.NOT_FOUND, String.format("Item %d does not exist", id));
+		}
+
+		/*
+		 * Note: we could have obtained the item and then tried to return item.getUsers(),
+		 * but that would fail as it's a lazy collection and Micronaut would try to serialize
+		 * it to JSON outside of this method. One solution would have been to fetch all of it
+		 * in one go by creating a copy, but it's more efficient to just query the user
+		 * repo for the information we want directly.
+		 */
+		return usersRepository.findByItemsId(id, Pageable.from(page, config.getPageSize()));
+	}
+
+	@Transactional
+	@Put(value = "/{id}/users/{userId}", produces = MediaType.TEXT_PLAIN)
+	public HttpResponse<String> assignUser(@PathVariable long id, @PathVariable long userId) {
+		ToDoItem item = findItem(id);
+		User user = findUser(userId);
+		if (item.getUsers().add(user)) {
+			repo.save(item);
+			return HttpResponse.created(String.format("User %d has been added to task %d", userId, id));
+		} else {
+			return HttpResponse.ok(String.format("User %d was already part of task %d", userId, id));
+		}
+	}
+
+	@Transactional
+	@Delete(value = "/{id}/users/{userId}", produces = MediaType.TEXT_PLAIN)
+	public HttpResponse<String> unassignUser(@PathVariable long id, @PathVariable long userId) {
+		ToDoItem item = findItem(id);
+		User user = findUser(userId);
+		if (item.getUsers().remove(user)) {
+			repo.save(item);
+			return HttpResponse.created(String.format("User %d has been removed from task %d", userId, id));
+		} else {
+			return HttpResponse.ok(String.format("User %d was not part of task %d", userId, id));
+		}
+	}
+
+	protected User findUser(long userId) {
+		@NonNull Optional<User> oUser = usersRepository.findById(userId);
+		if (oUser.isEmpty()) {
+			throw new HttpStatusException(HttpStatus.NOT_FOUND, String.format("User with ID %d does not exist", userId));
+		}
+    return oUser.get();
+	}
+
+	protected ToDoItem findItem(long id) {
+		Optional<ToDoItem> item = repo.findById(id);
+		if (item.isEmpty()) {
+			throw new HttpStatusException(HttpStatus.NOT_FOUND, String.format("Item %d not found", id));
+		}
+		return item.get();
+	}
+
+	protected static String generateURL(ToDoItem item) {
 		return String.format("%s/%d", PREFIX, item.getId());
 	}
 }
