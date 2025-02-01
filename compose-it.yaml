@@ -34,12 +34,10 @@ services:
     ports:
       - 8080:8080
     environment:
-      DB_HOST: db
-      DB_USER: *dbuser
-      DB_PASSWORD: *dbpass
-      DB_NAME: *dbname
+      DATASOURCES_DEFAULT_URL: jdbc:mariadb://db/tododb
+      DATASOURCES_DEFAULT_USERNAME: *dbuser
+      DATASOURCES_DEFAULT_PASSWORD: *dbpass
       KAFKA_BOOTSTRAP_SERVERS: kafka-0:9092,kafka-1:9092,kafka-2:9092
-      MICRONAUT_ENVIRONMENTS: prod
     depends_on:
       db:
         condition: service_healthy
