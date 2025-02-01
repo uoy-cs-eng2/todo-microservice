@@ -1,6 +1,0 @@
-applicationType: cli
-defaultPackage: todo.cli
-testFramework: junit
-sourceLanguage: java
-buildTool: gradle
-features: [app-name, graalvm, gradle, http-client-test, java, junit, logback, micronaut-build, picocli, picocli-java-application, picocli-junit, properties, readme, serialization-jackson, shade, http-client]
