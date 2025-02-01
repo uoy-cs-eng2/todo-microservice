@@ -22,7 +22,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 import io.micronaut.serde.annotation.Serdeable;
@@ -35,17 +34,16 @@ public class ToDoItem {
 	@GeneratedValue
 	private Long id;
 
-	@JoinColumn(nullable = false)
-	@ManyToOne(fetch = FetchType.LAZY) 
+	@ManyToOne(fetch = FetchType.LAZY)
 	private ToDoList list;
 
-	@Column(nullable = false)
+	@Column
 	private LocalDateTime timestamp;
 
-	@Column(nullable = false)
+	@Column
 	private String title;
 
-	@Column(columnDefinition = "text", nullable=false)
+	@Column
 	private String body;
 
 	public ToDoItem() {

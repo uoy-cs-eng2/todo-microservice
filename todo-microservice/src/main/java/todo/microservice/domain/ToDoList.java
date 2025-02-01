@@ -15,12 +15,11 @@
  */
 package todo.microservice.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import io.micronaut.serde.annotation.Serdeable;
+
+import java.util.List;
 
 @Serdeable
 @Entity
@@ -30,8 +29,11 @@ public class ToDoList {
 	@GeneratedValue
 	private Long id;
 
-	@Column(unique=true, nullable = false)
+	@Column
 	private String name;
+
+	@OneToMany(mappedBy = "list", cascade = CascadeType.ALL)
+	private List<ToDoItem> items;
 
 	public ToDoList() {
 		// empty constructor
