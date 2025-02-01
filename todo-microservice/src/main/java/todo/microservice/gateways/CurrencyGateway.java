@@ -49,27 +49,19 @@ public class CurrencyGateway {
 		}
 
 		@Override
-		public Double load(CurrencyPair key) throws Exception {
+		public Double load(CurrencyPair key) {
 			Map<String, Object> rawData = client.exchange(key.date, key.source);
-			Object targetData = rawData.get(key.target);
-			if (targetData == null) {
-				throw new NoSuchElementException("Could not find exchange value for " + key);
-			} else {
-				return ((Number) targetData).doubleValue();
+			if (rawData != null) {
+				Object targetData = rawData.get(key.source);
+				if (targetData instanceof Map rates) {
+					return ((Number) rates.get(key.target)).doubleValue();
+				}
 			}
+			throw new NoSuchElementException("Could not find exchange value for " + key);
 		}
 	}
 
-	private class CurrencyPair {
-		private final String date, source, target;
-
-		private CurrencyPair(String date, String source, String target) {
-			this.date = date;
-			this.source = source;
-			this.target = target;
-		}
-
-	}
+	private record CurrencyPair(String date, String source, String target) {}
 
 	// We only ask for the available set of currencies at the start
 	private final Optional<Set<String>> availableCurrencies;

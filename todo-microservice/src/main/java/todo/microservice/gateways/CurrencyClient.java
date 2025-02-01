@@ -26,7 +26,7 @@ import jakarta.validation.constraints.Pattern;
 
 @CircuitBreaker
 @Validated
-@Client("${currency.url:`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api`}")
+@Client("${currency.url:`https://cdn.jsdelivr.net/npm/@fawazahmed0`}")
 public interface CurrencyClient {
 
 	String DATE_PATTERN = "[0-9]{4}-[0-2]{2}-[0-2]{2}|latest";
@@ -34,7 +34,7 @@ public interface CurrencyClient {
 	/**
 	 * Retrieves all available currencies from this API.
 	 */
-	@Get("@latest/v1/currencies")
+	@Get("currency-api@latest/v1/currencies.json")
 	Map<String, String> availableCurrencies();
 
 	/**
@@ -43,7 +43,7 @@ public interface CurrencyClient {
 	 * @param date Date in YYYY-MM-DD format, or "latest" for the latest value.
 	 * @param currency Source currency.
 	 */
-	@Get("@{date}/v1/currencies/{currency}.json")
+	@Get("currency-api@{date}/v1/currencies/{currency}.json")
 	Map<String, Object> exchange(@NotBlank @Pattern(regexp=DATE_PATTERN) String date, @NotBlank String currency);
 
 }
