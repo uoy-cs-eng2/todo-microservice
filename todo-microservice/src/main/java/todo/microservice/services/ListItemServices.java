@@ -44,7 +44,7 @@ public class ListItemServices {
 		"Exchange (?<source>\\w+) to (?<target>\\w+) @ (?<date>([0-9]+{4}-[0-9]{2}-[0-9]{2}|latest))",
 		Pattern.CASE_INSENSITIVE);
 
-	public void create(ToDoList list, ToDoItem item) {
+	public ToDoItem create(ToDoList list, ToDoItem item) {
 		// Ignore the ID for addition
 		item.setId(null);
 		item.setList(list);
@@ -70,7 +70,7 @@ public class ListItemServices {
 			item.setBody(item.getBody() + extraText);
 		}
 
-		repo.save(item);
+		return repo.save(item);
 	}
 
 	public <T> T update(ToDoItem item, ListItemUpdateRequest update, Supplier<T> listNotFound, Supplier<T> allOk) {
