@@ -12,7 +12,7 @@ services:
       MARIADB_DATABASE: &dbname tododb
     volumes:
       - mariadb_data:/var/lib/mysql
-      # For Practical 5C - shows how to create additional databases for other microservices
+      # Example of how to create additional databases for other microservices
       - ./sql:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
