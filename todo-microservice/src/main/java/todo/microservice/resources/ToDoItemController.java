@@ -26,8 +26,10 @@ import io.micronaut.http.annotation.Delete;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Put;
 import io.micronaut.http.annotation.QueryValue;
+import io.micronaut.scheduling.TaskExecutors;
+import io.micronaut.scheduling.annotation.ExecuteOn;
 import jakarta.inject.Inject;
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import todo.microservice.ToDoConfiguration;
 import todo.microservice.domain.ToDoItem;
 import todo.microservice.events.ToDoProducer;
@@ -35,6 +37,7 @@ import todo.microservice.repositories.ToDoItemRepository;
 import todo.microservice.services.ListItemServices;
 import todo.microservice.services.ListItemUpdateRequest;
 
+@ExecuteOn(TaskExecutors.BLOCKING)
 @Controller(ToDoItemController.PREFIX)
 public class ToDoItemController {
 	public static final String PREFIX = "/items";

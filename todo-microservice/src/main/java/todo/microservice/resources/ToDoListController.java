@@ -22,6 +22,7 @@ import io.micronaut.data.model.Pageable;
 import io.micronaut.http.HttpHeaders;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
+import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Delete;
@@ -29,8 +30,10 @@ import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.Put;
 import io.micronaut.http.annotation.QueryValue;
+import io.micronaut.scheduling.TaskExecutors;
+import io.micronaut.scheduling.annotation.ExecuteOn;
 import jakarta.inject.Inject;
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import todo.microservice.ToDoConfiguration;
 import todo.microservice.domain.ToDoItem;
 import todo.microservice.domain.ToDoList;
@@ -43,6 +46,7 @@ import todo.microservice.services.ListItemServices;
 /**
  * RESTful controller for to-do lists.
  */
+@ExecuteOn(TaskExecutors.BLOCKING)
 @Controller(ToDoListController.PREFIX)
 public class ToDoListController {
 	public static final String PREFIX = "/lists";
@@ -161,7 +165,7 @@ public class ToDoListController {
 	}
 
 	@Transactional
-	@Put("/byName/{oldName}")
+	@Put(value = "/byName/{oldName}")
 	public HttpResponse<String> update(String oldName, @Body String newName) {
 		Optional<ToDoList> list = repo.findByName(oldName);
 		if (list.isEmpty()) {
@@ -175,7 +179,7 @@ public class ToDoListController {
 		}
 	}
 
-	@Post("/")
+	@Post(value = "/", consumes = MediaType.TEXT_PLAIN, produces = MediaType.TEXT_PLAIN)
 	public HttpResponse<String> create(@Body String name) {
 		if (repo.existsByName(name)) {
 			return HttpResponse.status(HttpStatus.FORBIDDEN, 

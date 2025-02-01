@@ -21,12 +21,12 @@ import io.micronaut.http.annotation.Get;
 import io.micronaut.http.client.annotation.Client;
 import io.micronaut.retry.annotation.CircuitBreaker;
 import io.micronaut.validation.Validated;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 
 @CircuitBreaker
 @Validated
-@Client("${currency.url:`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1`}")
+@Client("${currency.url:`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api`}")
 public interface CurrencyClient {
 
 	String DATE_PATTERN = "[0-9]{4}-[0-2]{2}-[0-2]{2}|latest";
@@ -34,7 +34,7 @@ public interface CurrencyClient {
 	/**
 	 * Retrieves all available currencies from this API.
 	 */
-	@Get("/latest/currencies.json")
+	@Get("@latest/v1/currencies")
 	Map<String, String> availableCurrencies();
 
 	/**
@@ -43,17 +43,7 @@ public interface CurrencyClient {
 	 * @param date Date in YYYY-MM-DD format, or "latest" for the latest value.
 	 * @param currency Source currency.
 	 */
-	@Get("/{date}/currencies/{currency}.json")
+	@Get("@{date}/v1/currencies/{currency}.json")
 	Map<String, Object> exchange(@NotBlank @Pattern(regexp=DATE_PATTERN) String date, @NotBlank String currency);
-
-	/**
-	 * Retrieves the exchange value between two currencies at a certain date.
-	 *
-	 * @param date Date in YYYY-MM-DD format, or "latest" for the latest value.
-	 * @param from Source currency.
-	 * @param to Target currency.
-	 */
-	@Get("/{date}/currencies/{from}/{to}.json")
-	Map<String, Object> exchange(@NotBlank @Pattern(regexp=DATE_PATTERN) String date, @NotBlank String from, @NotBlank String to);
 
 }

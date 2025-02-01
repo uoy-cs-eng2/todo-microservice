@@ -1,7 +1,8 @@
 plugins {
-    id("com.github.johnrengelman.shadow") version "7.1.2"
-    id("io.micronaut.application") version "3.7.10"
-    id("io.micronaut.test-resources") version "3.7.10"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("io.micronaut.application") version "4.4.4"
+    id("io.micronaut.test-resources") version "4.4.4"
+    id("io.micronaut.aot") version "4.4.4"
 }
 
 version = "0.1"
@@ -12,60 +13,42 @@ repositories {
 }
 
 dependencies {
-    // Serdes for JSON
-    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
-    implementation("io.micronaut.serde:micronaut-serde-jackson")
-
-    // HTTP request validation
-    annotationProcessor("io.micronaut:micronaut-http-validation")
-
-    // Data mapping via Hibernate and JPA to a MariaDB database
     annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    annotationProcessor("io.micronaut:micronaut-http-validation")
+    annotationProcessor("io.micronaut.openapi:micronaut-openapi")
+    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    annotationProcessor("io.micronaut.validation:micronaut-validation-processor")
+
     implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
-    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
-    implementation("io.micronaut.sql:micronaut-hibernate-jpa")
-    implementation("jakarta.annotation:jakarta.annotation-api")
-    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
-
-    // Declarative HTTP client and circuit breaker
-    implementation("io.micronaut:micronaut-http-client")
-
-    // Basic Kafka support
     implementation("io.micronaut.kafka:micronaut-kafka")
-
-    // Kafka Streams support (requires having at least one stream, or build will fail)
     implementation("io.micronaut.kafka:micronaut-kafka-streams")
+    implementation("io.micronaut:micronaut-retry")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
+    implementation("io.micronaut.validation:micronaut-validation")
+    implementation("jakarta.validation:jakarta.validation-api")
 
-    // Logging via Logback
+    implementation("io.micronaut:micronaut-http-client")
+    compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
     runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+    testImplementation("io.micronaut:micronaut-http-client")
 
-    // Type hints for native-image
-    annotationProcessor("io.micronaut:micronaut-graal")
-    compileOnly("org.graalvm.nativeimage:svm")
-
-    // Caching and any other useful data structures
+    // Caching and any other useful data structures - TODO: replace with Micronaut Cache
     implementation("com.google.guava:guava:32.1.2-jre")
 }
 
 
 application {
-    mainClass.set("todo.microservice.Application")
+    mainClass = "todo.microservice.Application"
 }
 java {
-    sourceCompatibility = JavaVersion.toVersion("11")
-    targetCompatibility = JavaVersion.toVersion("11")
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
 }
 
-graalvmNative {
-  toolchainDetection = false
 
-  /* Only needed to run Kafka Streams in a native image. Not needed otherwise. */
-  binaries.configureEach {
-    buildArgs.add('-H:IncludeResources="librocksdbjni-linux64.*"')
-    buildArgs.add('-H:IncludeResources="kafka/kafka-streams-version.properties"')
-    buildArgs.add('-H:JNIConfigurationFiles=resources/kafka-streams/jni-config.json')
-  }
-}
+graalvmNative.toolchainDetection = false
 
 micronaut {
     runtime("netty")
@@ -74,11 +57,23 @@ micronaut {
         incremental(true)
         annotations("todo.microservice.*")
     }
+    testResources {
+        sharedServer = true
+    }
+    aot {
+        // Please review carefully the optimizations enabled below
+        // Check https://micronaut-projects.github.io/micronaut-aot/latest/guide/ for more details
+        optimizeServiceLoading = false
+        convertYamlToJava = false
+        precomputeOperations = true
+        cacheEnvironment = true
+        optimizeClassLoading = true
+        deduceEnvironment = true
+        optimizeNetty = true
+        replaceLogbackXml = true
+    }
 }
 
-// We need the C++ standard library for RocksDB (used by Kafka Streams),
-// and the glibc compatibility layer.
 tasks.named("dockerfile") {
-  baseImage = "eclipse-temurin:11-alpine"
-  instruction "RUN apk add --no-cache libstdc++ gcompat"
+  baseImage = "eclipse-temurin:17-alpine"
 }

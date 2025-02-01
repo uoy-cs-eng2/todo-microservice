@@ -50,7 +50,7 @@ public class CurrencyGateway {
 
 		@Override
 		public Double load(CurrencyPair key) throws Exception {
-			Map<String, Object> rawData = client.exchange(key.date, key.source, key.target);
+			Map<String, Object> rawData = client.exchange(key.date, key.source);
 			Object targetData = rawData.get(key.target);
 			if (targetData == null) {
 				throw new NoSuchElementException("Could not find exchange value for " + key);
