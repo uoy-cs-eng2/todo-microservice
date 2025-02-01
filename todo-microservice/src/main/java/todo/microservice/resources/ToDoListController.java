@@ -37,6 +37,7 @@ import jakarta.transaction.Transactional;
 import todo.microservice.ToDoConfiguration;
 import todo.microservice.domain.ToDoItem;
 import todo.microservice.domain.ToDoList;
+import todo.microservice.dto.ListItemCreateDTO;
 import todo.microservice.dto.ListItemDTO;
 import todo.microservice.events.ToDoProducer;
 import todo.microservice.repositories.ToDoItemRepository;
@@ -103,7 +104,7 @@ public class ToDoListController {
 	}
 
 	@Transactional
-	@Delete("/{id}")
+	@Delete(value = "/{id}", produces = MediaType.TEXT_PLAIN)
 	public HttpResponse<String> delete(long id) {
 		if (itemRepo.existsByListId(id)) {
 			return HttpResponse.status(HttpStatus.FORBIDDEN,
@@ -119,7 +120,7 @@ public class ToDoListController {
 	}
 
 	@Transactional
-	@Delete("/byName/{name}")
+	@Delete(value = "/byName/{name}", produces = MediaType.TEXT_PLAIN)
 	public HttpResponse<String> delete(String name) {
 		Optional<ToDoList> optList = repo.findByName(name);
 		if (optList.isEmpty()) {
@@ -145,7 +146,7 @@ public class ToDoListController {
 	 * for each call to a repository method).
 	 */
 	@Transactional
-	@Put("/{id}")
+	@Put(value = "/{id}", consumes = MediaType.TEXT_PLAIN, produces = MediaType.TEXT_PLAIN)
 	public HttpResponse<String> update(long id, @Body String name) {
 		if (repo.existsByName(name)) {
 			return HttpResponse.status(HttpStatus.FORBIDDEN, 
@@ -165,7 +166,7 @@ public class ToDoListController {
 	}
 
 	@Transactional
-	@Put(value = "/byName/{oldName}")
+	@Put(value = "/byName/{oldName}", consumes = MediaType.TEXT_PLAIN, produces = MediaType.TEXT_PLAIN)
 	public HttpResponse<String> update(String oldName, @Body String newName) {
 		Optional<ToDoList> list = repo.findByName(oldName);
 		if (list.isEmpty()) {
@@ -196,23 +197,23 @@ public class ToDoListController {
 	}
 
 	@Transactional
-	@Post("/{listId}/items")
-	public HttpResponse<String> addItem(long listId, @Body ToDoItem item) {
+	@Post(value = "/{listId}/items", produces = MediaType.TEXT_PLAIN)
+	public HttpResponse<String> addItem(long listId, @Body ListItemCreateDTO item) {
 		Optional<ToDoList> list = repo.findById(listId);
 		if (list.isEmpty()) {
 			return HttpResponse.notFound("Could not find list with ID " + listId);
 		}
-		return addItem(item, list.get());
+		return addItem(item.createItem(), list.get());
 	}
 
 	@Transactional
-	@Post("/byName/{name}/items")
-	public HttpResponse<String> addItem(String name, @Body ToDoItem item) {
+	@Post(value = "/byName/{name}/items", produces = MediaType.TEXT_PLAIN)
+	public HttpResponse<String> addItem(String name, @Body ListItemCreateDTO item) {
 		Optional<ToDoList> list = repo.findByName(name);
 		if (list.isEmpty()) {
 			return HttpResponse.notFound("Could not find list with name " + name);
 		}
-		return addItem(item, list.get());
+		return addItem(item.createItem(), list.get());
 	}
 
 	private HttpResponse<String> addItem(ToDoItem item, ToDoList list) {

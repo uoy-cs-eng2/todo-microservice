@@ -20,6 +20,7 @@ import java.util.Optional;
 import io.micronaut.data.model.Page;
 import io.micronaut.data.model.Pageable;
 import io.micronaut.http.HttpResponse;
+import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Delete;
@@ -35,7 +36,7 @@ import todo.microservice.domain.ToDoItem;
 import todo.microservice.events.ToDoProducer;
 import todo.microservice.repositories.ToDoItemRepository;
 import todo.microservice.services.ListItemServices;
-import todo.microservice.services.ListItemUpdateRequest;
+import todo.microservice.dto.ListItemUpdateDTO;
 
 @ExecuteOn(TaskExecutors.BLOCKING)
 @Controller(ToDoItemController.PREFIX)
@@ -65,8 +66,8 @@ public class ToDoItemController {
 	}
 
 	@Transactional
-	@Put("/{id}")
-	HttpResponse<String> update(long id, @Body ListItemUpdateRequest update) {
+	@Put(value = "/{id}", produces = MediaType.TEXT_PLAIN)
+	HttpResponse<String> update(long id, @Body ListItemUpdateDTO update) {
 		Optional<ToDoItem> optItem = repo.findById(id);
 		if (optItem.isEmpty()) {
 			return null;
@@ -86,7 +87,7 @@ public class ToDoItemController {
 	}
 
 	@Transactional
-	@Delete("/{id}")
+	@Delete(value = "/{id}", produces = MediaType.TEXT_PLAIN)
 	HttpResponse<String> delete(long id) {
 		Optional<ToDoItem> optItem = repo.findById(id);
 		if (optItem.isEmpty()) {

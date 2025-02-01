@@ -24,6 +24,7 @@ import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import todo.microservice.domain.ToDoItem;
 import todo.microservice.domain.ToDoList;
+import todo.microservice.dto.ListItemUpdateDTO;
 import todo.microservice.gateways.CurrencyGateway;
 import todo.microservice.repositories.ToDoItemRepository;
 import todo.microservice.repositories.ToDoListRepository;
@@ -73,7 +74,7 @@ public class ListItemServices {
 		return repo.save(item);
 	}
 
-	public <T> T update(ToDoItem item, ListItemUpdateRequest update, Supplier<T> listNotFound, Supplier<T> allOk) {
+	public <T> T update(ToDoItem item, ListItemUpdateDTO update, Supplier<T> listNotFound, Supplier<T> allOk) {
 		if (update.getListId() != null) {
 			Optional<ToDoList> optList = listRepo.findById(update.getListId());
 			if (optList.isEmpty()) {

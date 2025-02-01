@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package todo.microservice.services;
+package todo.microservice.dto;
 
 import java.time.LocalDateTime;
 
@@ -24,7 +24,7 @@ import todo.microservice.domain.ToDoItem;
  * Represents a request to update a specific {@link ToDoItem}.
  */
 @Serdeable
-public class ListItemUpdateRequest {
+public class ListItemUpdateDTO {
 
 	private Long listId;
 	private String title, body;
