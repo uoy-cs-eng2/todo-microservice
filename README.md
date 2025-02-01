@@ -6,9 +6,11 @@ This project contains an example of a small microservice developed with [Microna
 
 The microservice can keep track of one or more to-do lists with their own names.
 Each list has zero or more items, with titles, bodies, and timestamps.
+An item can be assigned to multiple users, and a user can be assigned to multiple items.
 
 ```mermaid
 classDiagram
+direction LR
 
 class ToDoList {
   id: long
@@ -22,7 +24,13 @@ class ToDoItem {
   body: String
 }
 
-ToDoList *-- "0..n" ToDoItem: contains
+class User {
+  id: long
+  username: String
+}
+
+ToDoList *-- "*" ToDoItem: contains
+ToDoItem "*" -- "*" User: users
 ```
 
 ## C4 container model
