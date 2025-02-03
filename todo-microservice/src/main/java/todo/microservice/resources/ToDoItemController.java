@@ -15,8 +15,8 @@
  */
 package todo.microservice.resources;
 
-import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import io.micronaut.core.annotation.NonNull;
 import io.micronaut.data.model.Page;
@@ -109,18 +109,28 @@ public class ToDoItemController {
 
 	@Transactional
 	@Get("/{id}/users{?page}")
-	public List<User> getUsers(@PathVariable long id, @QueryValue(defaultValue = "0") @Min(0) int page) {
+	public Set<User> getUsers(@PathVariable long id, @QueryValue(defaultValue = "0") @Min(0) int page) {
 		if (!repo.existsById(id)) {
 			throw new HttpStatusException(HttpStatus.NOT_FOUND, String.format("Item %d does not exist", id));
 		}
 
-		/*
-		 * Note: we could have obtained the item and then tried to return item.getUsers(),
-		 * but that would fail as it's a lazy collection and Micronaut would try to serialize
-		 * it to JSON outside of this method. One solution would have been to fetch all of it
-		 * in one go by creating a copy, but it's more efficient to just query the user
-		 * repo for the information we want directly.
+		/* The line commented below would fail with:
+		 *
+		 *   failed to lazily initialize a collection of role:
+		 *   todo.microservice.domain.ToDoItem.users: could not initialize proxy - no Session
+		 *
+		 * This is because the users field in User would have a lazy collection, and trying to
+		 * fetch its contents while Micronaut is trying to serialize it to JSON would not be
+		 * possible as we'd be outside of the transaction that loaded the entity. One solution
+		 * is to just fetch its contents from this method, e.g. by creating a HashSet copy:
+		 *
+		 *   new HashSet<>(repo.findById(id).get().getUsers())
+		 *
+		 * However, it's more efficient (and also simpler) to just query the user repo for the
+		 * information we want directly.
 		 */
+		//!return repo.findById(id).get().getUsers();
+
 		return usersRepository.findByItemsId(id, Pageable.from(page, config.getPageSize()));
 	}
 

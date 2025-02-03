@@ -5,11 +5,11 @@ import io.micronaut.data.model.Pageable;
 import io.micronaut.data.repository.PageableRepository;
 import todo.microservice.domain.User;
 
-import java.util.List;
+import java.util.Set;
 
 @Repository
 public interface UsersRepository extends PageableRepository<User, Long> {
 
-  List<User> findByItemsId(Long id, Pageable pageable);
+  Set<User> findByItemsId(Long id, Pageable pageable);
 
 }
