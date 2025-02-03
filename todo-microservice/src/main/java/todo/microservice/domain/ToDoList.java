@@ -20,7 +20,7 @@ import jakarta.persistence.*;
 
 import io.micronaut.serde.annotation.Serdeable;
 
-import java.util.List;
+import java.util.Set;
 
 @Serdeable
 @Entity
@@ -35,7 +35,7 @@ public class ToDoList {
 
 	@JsonIgnore
 	@OneToMany(mappedBy = "list", cascade = CascadeType.ALL)
-	private List<ToDoItem> items;
+	private Set<ToDoItem> items;
 
 	public ToDoList() {
 		// empty constructor
@@ -57,11 +57,11 @@ public class ToDoList {
 		this.name = name;
 	}
 
-	public List<ToDoItem> getItems() {
+	public Set<ToDoItem> getItems() {
 		return items;
 	}
 
-	public void setItems(List<ToDoItem> items) {
+	public void setItems(Set<ToDoItem> items) {
 		this.items = items;
 	}
 
