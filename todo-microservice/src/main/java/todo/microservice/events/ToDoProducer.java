@@ -24,37 +24,34 @@ import todo.microservice.domain.ToDoList;
 @KafkaClient
 public interface ToDoProducer {
 
-	String TOPIC_LISTS = "lists";
-	String TOPIC_ITEMS = "items"; 
-
-	@Topic(TOPIC_LISTS)
+	@Topic(ToDoTopicFactory.TOPIC_LISTS)
 	void listChanged(@KafkaKey long id, ListChangeEvent list);
 
-	@Topic(TOPIC_ITEMS)
+	@Topic(ToDoTopicFactory.TOPIC_ITEMS)
 	void itemChanged(@KafkaKey long id, ItemChangeEvent item);
 
-	default void listDeleted(long id, ToDoList list) {
-		listChanged(id, new ListChangeEvent(ChangeType.DELETED, list));
+	default void listDeleted(ToDoList list) {
+		listChanged(list.getId(), new ListChangeEvent(ChangeType.DELETED, list));
 	}
 
-	default void listUpdated(long id, ToDoList newList) {
-		listChanged(id, new ListChangeEvent(ChangeType.UPDATED, newList));
+	default void listUpdated(ToDoList newList) {
+		listChanged(newList.getId(), new ListChangeEvent(ChangeType.UPDATED, newList));
 	}
 
-	default void listCreated(long id, ToDoList list) {
-		listChanged(id, new ListChangeEvent(ChangeType.CREATED, list));
+	default void listCreated(ToDoList list) {
+		listChanged(list.getId(), new ListChangeEvent(ChangeType.CREATED, list));
 	}
 
-	default void itemDeleted(long id, ToDoItem item) {
-		itemChanged(id, new ItemChangeEvent(ChangeType.DELETED, item));
+	default void itemDeleted(ToDoItem item) {
+		itemChanged(item.getId(), new ItemChangeEvent(ChangeType.DELETED, item));
 	}
 
-	default void itemUpdated(long id, ToDoItem item) {
-		itemChanged(id, new ItemChangeEvent(ChangeType.UPDATED, item));
+	default void itemUpdated(ToDoItem item) {
+		itemChanged(item.getId(), new ItemChangeEvent(ChangeType.UPDATED, item));
 	}
 
-	default void itemCreated(long id, ToDoItem item) {
-		itemChanged(id, new ItemChangeEvent(ChangeType.CREATED, item));
+	default void itemCreated(ToDoItem item) {
+		itemChanged(item.getId(), new ItemChangeEvent(ChangeType.CREATED, item));
 	}
 
 }

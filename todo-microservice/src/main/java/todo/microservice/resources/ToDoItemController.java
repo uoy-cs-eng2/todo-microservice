@@ -87,7 +87,7 @@ public class ToDoItemController {
 					"Could not update item %d: list %d does not exist", id, update.listId()
 				)),
 			() -> {
-				kafkaClient.itemUpdated(id, item);
+				kafkaClient.itemUpdated(item);
 				return HttpResponse.ok("Updated item with ID " + id);
 			}
 		);
@@ -103,7 +103,7 @@ public class ToDoItemController {
 
 		final ToDoItem item = optItem.get();
 		repo.delete(item);
-		kafkaClient.itemDeleted(id, item);
+		kafkaClient.itemDeleted(item);
 		return HttpResponse.ok(String.format("Item with ID %d was deleted successfully", id));
 	}
 

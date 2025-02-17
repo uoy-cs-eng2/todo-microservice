@@ -28,12 +28,12 @@ import io.micronaut.configuration.kafka.annotation.Topic;
 @KafkaListener
 public class ToDoConsumer {
 
-	@Topic(ToDoProducer.TOPIC_LISTS)
+	@Topic(ToDoTopicFactory.TOPIC_LISTS)
 	void listChanged(@KafkaKey long id, ListChangeEvent list) {
 		System.out.printf("LIST %d CHANGED: %s%n", id, list);
 	}
 
-	@Topic(ToDoProducer.TOPIC_ITEMS)
+	@Topic(ToDoTopicFactory.TOPIC_ITEMS)
 	void itemChanged(@KafkaKey long id, ItemChangeEvent item) {
 		System.out.printf("ITEM %d CHANGED: %s%n", id, item);
 	}

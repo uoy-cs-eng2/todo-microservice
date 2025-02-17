@@ -116,7 +116,7 @@ public class ToDoListController {
 
 		ToDoList fakeList = new ToDoList();
 		fakeList.setId(id);
-		kafkaClient.listDeleted(id, fakeList);
+		kafkaClient.listDeleted(fakeList);
 
 		return HttpResponse.ok(String.format("List with ID %d deleted successfully", id));
 	}
@@ -137,7 +137,7 @@ public class ToDoListController {
 		}
 
 		repo.deleteByName(name);
-		kafkaClient.listDeleted(listId, list);
+		kafkaClient.listDeleted(list);
 		return HttpResponse.ok(String.format("List with name %s deleted successfully", name));
 	}
 
@@ -162,7 +162,7 @@ public class ToDoListController {
 			ToDoList foundList = list.get();
 			foundList.setName(name);
 			repo.save(foundList);
-			kafkaClient.listUpdated(id, foundList);
+			kafkaClient.listUpdated(foundList);
 			return HttpResponse.ok(String.format("Renamed list with ID %d to '%s'", id, name));
 		}
 	}
@@ -177,7 +177,7 @@ public class ToDoListController {
 			ToDoList foundList = list.get();
 			foundList.setName(newName);
 			repo.save(foundList);
-			kafkaClient.listUpdated(foundList.getId(), foundList);
+			kafkaClient.listUpdated(foundList);
 			return HttpResponse.ok(String.format("Renamed list with name '%s' to '%s'", oldName, newName));
 		}
 	}
@@ -193,7 +193,7 @@ public class ToDoListController {
 		list.setName(name);
 		repo.save(list);
 
-		kafkaClient.listCreated(list.getId(), list);
+		kafkaClient.listCreated(list);
 		return HttpResponse.created("List created")
 			.header(HttpHeaders.LOCATION, generateURL(list)); 
 	}
@@ -219,8 +219,8 @@ public class ToDoListController {
 	}
 
 	private HttpResponse<String> addItem(ToDoItem item, ToDoList list) {
-		itemServices.create(list, item);
-		kafkaClient.itemCreated(list.getId(), item);
+		item = itemServices.create(list, item);
+		kafkaClient.itemCreated(item);
 
 		final String itemURL = ToDoItemController.generateURL(item);
 		return HttpResponse.created(String.format(
