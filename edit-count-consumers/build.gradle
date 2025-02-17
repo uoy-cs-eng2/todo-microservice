@@ -13,10 +13,16 @@ repositories {
 }
 
 dependencies {
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
+    implementation("io.micronaut.flyway:micronaut-flyway")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("io.micronaut.kafka:micronaut-kafka")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
+    runtimeOnly("org.flywaydb:flyway-mysql")
     runtimeOnly("ch.qos.logback:logback-classic")
+    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
 }
 
 

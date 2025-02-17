@@ -145,7 +145,7 @@ public class ToDoListController {
 	 * The @Transactional annotation is needed here so that the transaction covers
 	 * both fetch and update, otherwise JPA will complain about trying to persist
 	 * a detached entity as we'd end up doing multiple separate transactions (one
-	 * for each call to a repository method).
+	 * for each call to a repositories method).
 	 */
 	@Transactional
 	@Put(value = "/{id}", consumes = MediaType.TEXT_PLAIN, produces = MediaType.TEXT_PLAIN)

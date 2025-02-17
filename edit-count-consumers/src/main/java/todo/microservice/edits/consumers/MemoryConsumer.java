@@ -1,13 +1,14 @@
 package todo.microservice.edits.consumers;
 
 import io.micronaut.configuration.kafka.annotation.KafkaListener;
+import io.micronaut.configuration.kafka.annotation.OffsetReset;
 import io.micronaut.configuration.kafka.annotation.Topic;
 import todo.microservice.edits.events.ItemChangeEvent;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@KafkaListener(groupId="in-memory")
+@KafkaListener(groupId="in-memory", offsetReset=OffsetReset.EARLIEST)
 public class MemoryConsumer {
   private Map<Long, Integer> countsByListId = new HashMap<>();
 

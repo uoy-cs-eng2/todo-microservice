@@ -18,10 +18,12 @@ import java.util.Map;
  * each with their own internal state (i.e. their own HashMap) covering only part of the
  * events.
  *
- * If we didn't have this annotation, every thread would share the same instance and
- * therefore would all go into the same HashMap. With the appropriate synchronisation
- * this would work again, but we would still have the performance issue of having to
- * seek to offset 0 every time.
+ * If we didn't have this @ThreadLocal annotation, every thread would share the same
+ * MultiThreadRestartingMemoryConsumer instance and therefore every update would go
+ * into the same HashMap. With the appropriate synchronisation we would get correct,
+ * totals, but we would still have the performance issue of having to seek to offset
+ * 0 every time (and the synchronisation would nullify any speedup we'd have from
+ * multithreading).
  */
 @ThreadLocal
 @KafkaListener(groupId="in-memory-multithread", threads = 3)
