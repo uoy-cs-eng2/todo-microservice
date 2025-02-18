@@ -16,11 +16,8 @@ import todo.microservice.edits.repositories.AltEditCountRepository;
 @KafkaListener(groupId = "rekey-per-list-table", threads = 3, offsetReset = OffsetReset.EARLIEST)
 public class RekeyingPerListTableConsumer {
 
-  @Inject
-  private ListItemChangeProducer listItemChangeProducer;
-
-  @Inject
-  private AltEditCountRepository repository;
+  @Inject private ListItemChangeProducer listItemChangeProducer;
+  @Inject private AltEditCountRepository repository;
 
   @Topic("items")
   public void rekeyItemChanges(ItemChangeEvent event) {
@@ -37,7 +34,7 @@ public class RekeyingPerListTableConsumer {
   @Transactional
   @Topic(ListItemChangeTopicFactory.TOPIC)
   public void listItemChanged(@KafkaKey long listId) {
-    AltEditCount editCount = repository.findByListId(listId).orElse(new AltEditCount(listId));
+    var editCount = repository.findByListId(listId).orElse(new AltEditCount(listId));
     editCount.setEditCount(editCount.getEditCount() + 1);
     repository.save(editCount);
 

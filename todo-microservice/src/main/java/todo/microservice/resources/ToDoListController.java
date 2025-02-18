@@ -182,7 +182,7 @@ public class ToDoListController {
 		}
 	}
 
-	@Post(value = "/", consumes = MediaType.TEXT_PLAIN, produces = MediaType.TEXT_PLAIN)
+	@Post(consumes = MediaType.TEXT_PLAIN, produces = MediaType.TEXT_PLAIN)
 	public HttpResponse<String> create(@Body String name) {
 		if (repo.existsByName(name)) {
 			return HttpResponse.status(HttpStatus.FORBIDDEN, 
@@ -220,7 +220,6 @@ public class ToDoListController {
 
 	private HttpResponse<String> addItem(ToDoItem item, ToDoList list) {
 		item = itemServices.create(list, item);
-		kafkaClient.itemCreated(item);
 
 		final String itemURL = ToDoItemController.generateURL(item);
 		return HttpResponse.created(String.format(

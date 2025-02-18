@@ -22,14 +22,17 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import todo.microservice.domain.ToDoItem;
 import todo.microservice.domain.ToDoList;
+import todo.microservice.dto.ListItemUpdateDTO;
+import todo.microservice.events.ToDoProducer;
 import todo.microservice.gateways.CurrencyGateway;
 import todo.microservice.repositories.ToDoItemRepository;
 import todo.microservice.repositories.ToDoListRepository;
 
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.Mockito.*;
 
 @MicronautTest
 public class ListItemServicesTest {
@@ -42,6 +45,9 @@ public class ListItemServicesTest {
 
   @Inject
   ListItemServices listItemServices;
+
+  @Inject
+  ToDoProducer producer;
 
   @BeforeEach
   public void setup() {
@@ -65,20 +71,60 @@ public class ListItemServicesTest {
     assertTrue(item.getBody().toLowerCase().contains("exchange rate"));
   }
 
+  @Test
+  public void createProducesEvents() {
+    ToDoList l = new ToDoList();
+    l.setName("test");
+    l = listRepository.save(l);
+
+    ToDoItem item = new ToDoItem();
+    item.setList(l);
+    item.setTitle("New item");
+    item.setBody("dummy");
+
+    item = listItemServices.create(l, item);
+    verify(producer).itemCreated(eq(item));
+  }
+
+  @Test
+  public void updateItemTitle() {
+    ToDoList l = new ToDoList();
+    l.setName("test");
+    l = listRepository.save(l);
+
+    ToDoItem item = new ToDoItem();
+    item.setList(l);
+    item.setTitle("New item");
+    item.setBody("dummy");
+    listItemServices.create(l, item);
+
+    ListItemUpdateDTO dto = new ListItemUpdateDTO(
+        item.getList().getId(), "New title", null, null);
+    listItemServices.update(item, dto, () -> null, () -> null);
+
+    // Item was updated
+    item = itemRepository.findById(item.getId()).get();
+    assertEquals("New title", item.getTitle());
+
+    // Item change event was produced
+    verify(producer).itemUpdated(eq(item));
+  }
+
+  @MockBean(ToDoProducer.class)
+  protected ToDoProducer getProducerMock() {
+    return mock(ToDoProducer.class);
+  }
+
   /**
-   * Replace the real service for a dummy for this test, as we're testing the item service and not
+   * Replace the real service for a stub for this test, as we're testing the item service and not
    * the real service.
    */
   @MockBean(CurrencyGateway.class)
-  protected static class DummyCurrencyGateway implements CurrencyGateway {
-    @Override
-    public boolean isValidCurrency(String currency) {
-      return true;
-    }
-
-    @Override
-    public Optional<Double> exchange(String date, String source, String target) {
-      return Optional.of(1.0);
-    }
+  protected CurrencyGateway getCurrencyGatewayStub() {
+    CurrencyGateway stub = mock(CurrencyGateway.class);
+    when(stub.isValidCurrency(any())).thenReturn(true);
+    when(stub.exchange(any(), any(), any())).thenReturn(Optional.of(1.0));
+    return stub;
   }
+
 }

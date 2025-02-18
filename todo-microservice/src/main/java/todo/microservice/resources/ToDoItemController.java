@@ -86,10 +86,7 @@ public class ToDoItemController {
 			() -> HttpResponse.badRequest(String.format(
 					"Could not update item %d: list %d does not exist", id, update.listId()
 				)),
-			() -> {
-				kafkaClient.itemUpdated(item);
-				return HttpResponse.ok("Updated item with ID " + id);
-			}
+			() -> HttpResponse.ok("Updated item with ID " + id)
 		);
 	}
 

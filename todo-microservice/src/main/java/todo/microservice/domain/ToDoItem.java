@@ -105,5 +105,4 @@ public class ToDoItem {
 		return "ToDoItem [id=" + id + ", list=" + list + ", timestamp=" + timestamp + ", title=" + title + ", body=" + body + "]";
 	}
 
-	
 }

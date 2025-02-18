@@ -7,16 +7,15 @@ import io.micronaut.configuration.kafka.annotation.Topic;
 import io.micronaut.messaging.annotation.MessageBody;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
-import todo.microservice.edits.domain.EditCount;
 import todo.microservice.edits.domain.EditCountByPartition;
 import todo.microservice.edits.events.ItemChangeEvent;
 import todo.microservice.edits.repositories.EditCountByPartitionRepository;
-import todo.microservice.edits.repositories.EditCountRepository;
 
 /**
  * This uses separate rows for each partition. At each point we have at most one
  * consumer per partition, so this should avoid any concurrency problems.
  */
+@SuppressWarnings("unused")
 @KafkaListener(groupId="per-partition-editcount-table", threads = 3, offsetReset = OffsetReset.EARLIEST)
 public class PerPartitionTableConsumer {
   @Inject
@@ -27,7 +26,7 @@ public class PerPartitionTableConsumer {
   public void itemChange(@MessageBody ItemChangeEvent ev, @KafkaPartition Integer partition) {
     final long listId = ev.item().getList().getId();
 
-    EditCountByPartition editCount = repository.findByListIdAndPartitionId(listId, partition).orElse(new EditCountByPartition(listId, partition));
+    var editCount = repository.findByListIdAndPartitionId(listId, partition).orElse(new EditCountByPartition(listId, partition));
     editCount.setEditCount(editCount.getEditCount() + 1);
     repository.save(editCount);
 

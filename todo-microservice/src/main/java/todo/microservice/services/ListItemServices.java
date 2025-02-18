@@ -25,6 +25,7 @@ import jakarta.inject.Singleton;
 import todo.microservice.domain.ToDoItem;
 import todo.microservice.domain.ToDoList;
 import todo.microservice.dto.ListItemUpdateDTO;
+import todo.microservice.events.ToDoProducer;
 import todo.microservice.gateways.CurrencyGateway;
 import todo.microservice.repositories.ToDoItemRepository;
 import todo.microservice.repositories.ToDoListRepository;
@@ -40,6 +41,9 @@ public class ListItemServices {
 
 	@Inject
 	private CurrencyGateway currencyGateway;
+
+	@Inject
+	private ToDoProducer kafkaClient;
 
 	private static final Pattern PATTERN_CURRENCY = Pattern.compile(
 		"Exchange (?<source>\\w+) to (?<target>\\w+) @ (?<date>([0-9]+{4}-[0-9]{2}-[0-9]{2}|latest))",
@@ -71,7 +75,9 @@ public class ListItemServices {
 			item.setBody(item.getBody() + extraText);
 		}
 
-		return repo.save(item);
+		ToDoItem created = repo.save(item);
+		kafkaClient.itemCreated(item);
+		return created;
 	}
 
 	public <T> T update(ToDoItem item, ListItemUpdateDTO update, Supplier<T> listNotFound, Supplier<T> allOk) {
@@ -92,6 +98,7 @@ public class ListItemServices {
 			item.setTimestamp(update.timestamp());
 		}
 		repo.save(item);
+		kafkaClient.itemUpdated(item);
 
 		return allOk.get();
 	}
