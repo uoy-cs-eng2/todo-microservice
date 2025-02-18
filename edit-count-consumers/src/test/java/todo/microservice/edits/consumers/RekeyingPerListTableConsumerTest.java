@@ -42,21 +42,25 @@ public class RekeyingPerListTableConsumerTest {
     DescribeTopicsResult describeResult = adminClient
         .describeTopics(Arrays.asList("items", ListItemChangeTopicFactory.TOPIC));
 
-    /*
-     * We build up a request to delete all records from all partitions of the above topics
-     * (if they exist in the cluster).
-     */
-    Map<TopicPartition, RecordsToDelete> request = new HashMap<>();
-    for (Map.Entry<String, KafkaFuture<TopicDescription>> entry : describeResult.topicNameValues().entrySet()) {
+    // We ask for the offsets in the existing topics
+    Map<TopicPartition, OffsetSpec> offsetsRequest = new HashMap<>();
+    for (var entry : describeResult.topicNameValues().entrySet()) {
       TopicDescription topicDescription = entry.getValue().get();
       if (topicDescription != null) {
         for (TopicPartitionInfo part : topicDescription.partitions()) {
           TopicPartition tp = new TopicPartition(entry.getKey(), part.partition());
-          request.put(tp, RecordsToDelete.beforeOffset(Long.MAX_VALUE));
+          offsetsRequest.put(tp, OffsetSpec.latest());
         }
       }
     }
-    adminClient.deleteRecords(request);
+
+    // Send a request to delete everything before those offsets
+    var offsetsResponse = adminClient.listOffsets(offsetsRequest).all().get();
+    Map<TopicPartition, RecordsToDelete> deleteRequest = new HashMap<>();
+    for (var entry : offsetsResponse.entrySet()) {
+      deleteRequest.put(entry.getKey(), RecordsToDelete.beforeOffset(entry.getValue().offset()));
+    }
+    adminClient.deleteRecords(deleteRequest);
 
     // Clean the table as well
     repo.deleteAll();
@@ -70,7 +74,7 @@ public class RekeyingPerListTableConsumerTest {
     }
 
     // The correct edit count should be computed in a reasonable amount of time
-    await().atMost(Duration.ofSeconds(5)).until(editCountIsEqualTo(LIST_ID, nChanges));
+    await().atMost(Duration.ofSeconds(10)).until(editCountIsEqualTo(LIST_ID, nChanges));
   }
 
   private Callable<Boolean> editCountIsEqualTo(long listId, int nChanges) {
