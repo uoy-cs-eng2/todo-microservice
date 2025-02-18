@@ -28,7 +28,7 @@ import java.util.Map;
 @ThreadLocal
 @KafkaListener(groupId="in-memory-multithread", threads = 3)
 public class MultiThreadRestartingMemoryConsumer implements ConsumerSeekAware {
-  private Map<Long, Integer> countsByListId = new HashMap<>();
+  private final Map<Long, Integer> countsByListId = new HashMap<>();
 
   @Topic("items")
   public void itemChange(ItemChangeEvent ev) {
@@ -52,6 +52,7 @@ public class MultiThreadRestartingMemoryConsumer implements ConsumerSeekAware {
 
   @Override
   public void onPartitionsAssigned(Collection<TopicPartition> collection, KafkaSeeker seeker) {
+    countsByListId.clear();
     for (TopicPartition partition : collection) {
       // always replay from the beginning
       seeker.perform(KafkaSeekOperation.seek(partition, 0));

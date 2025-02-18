@@ -14,7 +14,7 @@ import java.util.Map;
 
 @KafkaListener(groupId="in-memory-restarting")
 public class RestartingMemoryConsumer implements ConsumerSeekAware {
-  private Map<Long, Integer> countsByListId = new HashMap<>();
+  private final Map<Long, Integer> countsByListId = new HashMap<>();
 
   @Topic("items")
   public void itemChange(ItemChangeEvent ev) {
@@ -38,6 +38,7 @@ public class RestartingMemoryConsumer implements ConsumerSeekAware {
 
   @Override
   public void onPartitionsAssigned(Collection<TopicPartition> collection, KafkaSeeker seeker) {
+    countsByListId.clear();
     for (TopicPartition partition : collection) {
       // always replay from the beginning
       seeker.perform(KafkaSeekOperation.seek(partition, 0));
