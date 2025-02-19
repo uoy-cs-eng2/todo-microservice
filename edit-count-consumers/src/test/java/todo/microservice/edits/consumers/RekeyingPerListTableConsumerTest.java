@@ -37,12 +37,12 @@ public class RekeyingPerListTableConsumerTest {
 
   @BeforeEach
   public void setup() throws Exception {
-    // Find out if the topics we need are in the cluster, and how many partitions they have
+    // 1. Find out if the topics we need are in the cluster, and how many partitions they have
     DescribeTopicsResult describeResult = adminClient
         .describeTopics(Arrays.asList("items", ListItemChangeTopicFactory.TOPIC));
 
-    // We ask for the offsets in the existing topics
-    Map<TopicPartition, OffsetSpec> offsetsRequest = new HashMap<>();
+    // 2. We ask for the offsets in the existing topics
+    var offsetsRequest = new HashMap<TopicPartition, OffsetSpec>();
     for (var entry : describeResult.topicNameValues().entrySet()) {
       TopicDescription topicDescription = entry.getValue().get();
       if (topicDescription != null) {
@@ -52,37 +52,40 @@ public class RekeyingPerListTableConsumerTest {
         }
       }
     }
-
-    // Send a request to delete everything before those offsets
     var offsetsResponse = adminClient.listOffsets(offsetsRequest).all().get();
-    Map<TopicPartition, RecordsToDelete> deleteRequest = new HashMap<>();
+
+    // 3. Send request to delete records before those offsets
+    var deleteRequest = new HashMap<TopicPartition, RecordsToDelete>();
     for (var entry : offsetsResponse.entrySet()) {
       deleteRequest.put(entry.getKey(), RecordsToDelete.beforeOffset(entry.getValue().offset()));
     }
     adminClient.deleteRecords(deleteRequest);
 
-    // Clean the table as well
+    // 4. Clean the table as well
     repo.deleteAll();
   }
 
   @Test
   public void listCountIsUpdated() {
     final int nChanges = 20;
-    for (int i = 0; i < nChanges; i++) {
-      consumer.rekeyItemChanges(new ItemChangeEvent(ChangeType.CREATED, createItem(i)));
-    }
+    for (int i = 0; i < nChanges; i++)
+      consumer.rekeyItemChanges(itemCreated(i));
 
     // The correct edit count should be computed in a reasonable amount of time
-    await().atMost(Duration.ofSeconds(10)).until(editCountIsEqualTo(LIST_ID, nChanges));
+    await().atMost(Duration.ofSeconds(10)).until(editCountIs(nChanges));
   }
 
-  private Callable<Boolean> editCountIsEqualTo(long listId, int nChanges) {
+  private static ItemChangeEvent itemCreated(int i) {
+    return new ItemChangeEvent(ChangeType.CREATED, createItem(i));
+  }
+
+  private Callable<Boolean> editCountIs(int nC) {
     return () -> {
-        Optional<AltEditCount> oEditCount = repo.findByListId(listId);
-        if (oEditCount.isPresent()) {
-          return oEditCount.get().getEditCount() == nChanges;
-        }
-        return false;
+        var oEditCount = repo.findByListId(LIST_ID);
+        if (oEditCount.isPresent())
+          return oEditCount.get().getEditCount() == nC;
+        else
+          return false;
     };
   }
 

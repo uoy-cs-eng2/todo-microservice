@@ -29,17 +29,21 @@ public class PerPartitionTableConsumerTest {
 
   @Test
   public void sumIsComputed() {
-    consumer.itemChange(new ItemChangeEvent(ChangeType.CREATED, createItem(1)), 0);
-    consumer.itemChange(new ItemChangeEvent(ChangeType.CREATED, createItem(2)), 1);
-    consumer.itemChange(new ItemChangeEvent(ChangeType.CREATED, createItem(3)), 1);
-    consumer.itemChange(new ItemChangeEvent(ChangeType.CREATED, createItem(4)), 2);
-    consumer.itemChange(new ItemChangeEvent(ChangeType.CREATED, createItem(5)), 2);
-    consumer.itemChange(new ItemChangeEvent(ChangeType.CREATED, createItem(6)), 2);
+    consumer.itemChange(itemCreated(1), 0);
+    consumer.itemChange(itemCreated(2), 1);
+    consumer.itemChange(itemCreated(3), 1);
+    consumer.itemChange(itemCreated(4), 2);
+    consumer.itemChange(itemCreated(5), 2);
+    consumer.itemChange(itemCreated(6), 2);
 
     assertEquals(1, repo.findByListIdAndPartitionId(LIST_ID, 0).get().getEditCount());
     assertEquals(2, repo.findByListIdAndPartitionId(LIST_ID, 1).get().getEditCount());
     assertEquals(3, repo.findByListIdAndPartitionId(LIST_ID, 2).get().getEditCount());
     assertEquals(6, repo.getSumEditCountByListId(LIST_ID));
+  }
+
+  private static ItemChangeEvent itemCreated(int itemId) {
+    return new ItemChangeEvent(ChangeType.CREATED, createItem(itemId));
   }
 
   private static ToDoItem createItem(long itemId) {
