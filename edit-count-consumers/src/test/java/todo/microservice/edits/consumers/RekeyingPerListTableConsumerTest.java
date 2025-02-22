@@ -1,10 +1,8 @@
 package todo.microservice.edits.consumers;
 
+import io.micronaut.test.annotation.MockBean;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
-import org.apache.kafka.clients.admin.*;
-import org.apache.kafka.common.TopicPartition;
-import org.apache.kafka.common.TopicPartitionInfo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import todo.microservice.edits.domain.AltEditCount;
@@ -12,14 +10,13 @@ import todo.microservice.edits.events.ChangeType;
 import todo.microservice.edits.events.ItemChangeEvent;
 import todo.microservice.edits.events.ToDoItem;
 import todo.microservice.edits.events.ToDoList;
-import todo.microservice.edits.producers.ListItemChangeTopicFactory;
+import todo.microservice.edits.producers.ListItemChangeProducer;
 import todo.microservice.edits.repositories.AltEditCountRepository;
 
-import java.time.Duration;
-import java.util.*;
-import java.util.concurrent.Callable;
-
-import static org.awaitility.Awaitility.await;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.*;
 
 @MicronautTest(transactional = false)
 public class RekeyingPerListTableConsumerTest {
@@ -28,65 +25,39 @@ public class RekeyingPerListTableConsumerTest {
   private RekeyingPerListTableConsumer consumer;
 
   @Inject
-  private AltEditCountRepository repo;
+  private ListItemChangeProducer producer;
 
   @Inject
-  private AdminClient adminClient;
+  private AltEditCountRepository repo;
 
   private static final long LIST_ID = 234L;
 
   @BeforeEach
-  public void setup() throws Exception {
-    // 1. Find out if the topics we need are in the cluster, and how many partitions they have
-    DescribeTopicsResult describeResult = adminClient
-        .describeTopics(Arrays.asList("items", ListItemChangeTopicFactory.TOPIC));
-
-    // 2. We ask for the offsets in the existing topics
-    var offsetsRequest = new HashMap<TopicPartition, OffsetSpec>();
-    for (var entry : describeResult.topicNameValues().entrySet()) {
-      TopicDescription topicDescription = entry.getValue().get();
-      if (topicDescription != null) {
-        for (TopicPartitionInfo part : topicDescription.partitions()) {
-          TopicPartition tp = new TopicPartition(entry.getKey(), part.partition());
-          offsetsRequest.put(tp, OffsetSpec.latest());
-        }
-      }
-    }
-    var offsetsResponse = adminClient.listOffsets(offsetsRequest).all().get();
-
-    // 3. Send request to delete records before those offsets
-    var deleteRequest = new HashMap<TopicPartition, RecordsToDelete>();
-    for (var entry : offsetsResponse.entrySet()) {
-      deleteRequest.put(entry.getKey(), RecordsToDelete.beforeOffset(entry.getValue().offset()));
-    }
-    adminClient.deleteRecords(deleteRequest);
-
-    // 4. Clean the table as well
+  public void setup() {
     repo.deleteAll();
   }
 
-  @Test
-  public void listCountIsUpdated() {
-    final int nChanges = 20;
-    for (int i = 0; i < nChanges; i++)
-      consumer.rekeyItemChanges(itemCreated(i));
+  @MockBean(ListItemChangeProducer.class)
+  public ListItemChangeProducer getProducer() {
+    return mock(ListItemChangeProducer.class);
+  }
 
-    // The correct edit count should be computed in a reasonable amount of time
-    await().atMost(Duration.ofSeconds(10)).until(editCountIs(nChanges));
+  @Test
+  public void itemCreationIsRekeyed() {
+    consumer.rekeyItemChanges(itemCreated(1));
+    verify(producer).listItemChanged(eq(LIST_ID), eq(ChangeType.CREATED));
+  }
+
+  @Test
+  public void rekeyedEventUpdatesCount() {
+    assertFalse(repo.existsById(LIST_ID));
+    consumer.listItemChanged(LIST_ID);
+    AltEditCount editCount = repo.findByListId(LIST_ID).get();
+    assertEquals(1L, editCount.getEditCount());
   }
 
   private static ItemChangeEvent itemCreated(int i) {
     return new ItemChangeEvent(ChangeType.CREATED, createItem(i));
-  }
-
-  private Callable<Boolean> editCountIs(int nC) {
-    return () -> {
-        var oEditCount = repo.findByListId(LIST_ID);
-        if (oEditCount.isPresent())
-          return oEditCount.get().getEditCount() == nC;
-        else
-          return false;
-    };
   }
 
   private static ToDoItem createItem(long itemId) {

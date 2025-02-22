@@ -22,7 +22,7 @@ dependencies {
     implementation("io.micronaut.serde:micronaut-serde-jackson")
 
     // For the rekeying test
-    testImplementation("org.awaitility:awaitility:4.2.2")
+    testImplementation("org.mockito:mockito-core:5.15.2")
 
     runtimeOnly("org.flywaydb:flyway-mysql")
     runtimeOnly("ch.qos.logback:logback-classic")
