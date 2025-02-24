@@ -27,6 +27,7 @@ dependencies {
     implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("io.micronaut.validation:micronaut-validation")
     implementation("jakarta.validation:jakarta.validation-api")
+    implementation("io.micronaut.cache:micronaut-cache-caffeine")
 
     implementation("io.micronaut:micronaut-http-client")
     compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
@@ -36,9 +37,6 @@ dependencies {
 
     testImplementation("io.micronaut:micronaut-http-client")
     testImplementation("org.mockito:mockito-core:5.15.2")
-
-    // Caching and any other useful data structures - TODO: replace with Micronaut Cache
-    implementation("com.google.guava:guava:32.1.2-jre")
 }
 
 
