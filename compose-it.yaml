@@ -2,8 +2,8 @@
 # todo-microservices Docker image.
 
 services:
-  # Our database management system
-  db:
+  # Database server for todo-microservice
+  tododb:
     image: mariadb:11
     environment:
       MARIADB_USER: &dbuser todo
@@ -11,38 +11,66 @@ services:
       MARIADB_ROOT_PASSWORD: iamroot
       MARIADB_DATABASE: &dbname tododb
     volumes:
-      - mariadb_data:/var/lib/mysql
-      # Example of how to create additional databases for other microservices
-      - ./sql:/docker-entrypoint-initdb.d
-    ports:
-      - 3306:3306
+      - tododb_data:/var/lib/mysql
     healthcheck:
       # https://github.com/docker-library/healthcheck/blob/master/mysql/Dockerfile.mariadb
       test: ['CMD', 'healthcheck.sh', '--su=mysql', '--connect', '--innodb_initialized']
       timeout: 10s
       retries: 3
 
-  # Web-based UI for MariaDB, available from http://localhost:9000
-  adminer:
-    image: adminer:4-standalone
-    ports:
-      - 9000:8080
-
   # Our microservice, built with './gradlew dockerBuild'
+  # Available from http://localhost:8080
   todo:
     image: todo-microservice:latest
     ports:
       - 8080:8080
     environment:
-      DATASOURCES_DEFAULT_URL: jdbc:mariadb://db/tododb
+      DATASOURCES_DEFAULT_URL: jdbc:mariadb://tododb/tododb
       DATASOURCES_DEFAULT_USERNAME: *dbuser
       DATASOURCES_DEFAULT_PASSWORD: *dbpass
       KAFKA_BOOTSTRAP_SERVERS: kafka-0:9092,kafka-1:9092,kafka-2:9092
     depends_on:
-      db:
+      tododb:
         condition: service_healthy
       kafka-0:
         condition: service_healthy
+
+  # Database server for edit-counts-consumers
+  countsdb:
+    image: mariadb:11
+    environment:
+      MARIADB_USER: &counts_dbuser counts
+      MARIADB_PASSWORD: &counts_dbpass countssecret
+      MARIADB_ROOT_PASSWORD: iamroot
+      MARIADB_DATABASE: &dbname counts
+    volumes:
+      - countsdb_data:/var/lib/mysql
+    healthcheck:
+      # https://github.com/docker-library/healthcheck/blob/master/mysql/Dockerfile.mariadb
+      test: ['CMD', 'healthcheck.sh', '--su=mysql', '--connect', '--innodb_initialized']
+      timeout: 10s
+      retries: 3
+
+  # The edit-counts-consumers application, also built with './gradlew dockerBuild'.
+  # It doesn't have any controllers, so there is no point in exposing it to the outside.
+  editcounts:
+    image: edit-count-consumers:latest
+    environment:
+      DATASOURCES_EDITCOUNTS_URL: jdbc:mariadb://countsdb/counts
+      DATASOURCES_EDITCOUNTS_USERNAME: *counts_dbuser
+      DATASOURCES_EDITCOUNTS_PASSWORD: *counts_dbpass
+      KAFKA_BOOTSTRAP_SERVERS: kafka-0:9092,kafka-1:9092,kafka-2:9092
+    depends_on:
+      countsdb:
+        condition: service_healthy
+      kafka-0:
+        condition: service_healthy
+
+  # Web-based UI for MariaDB, available from http://localhost:9000
+  adminer:
+    image: adminer:4-standalone
+    ports:
+      - 9000:8080
 
   # Web-based UI for Kafka (this time on http://localhost:9001)
   kafka-ui:
@@ -59,11 +87,18 @@ services:
       KAFKA_CLUSTERS_0_METRICS_PORT: 9997
       DYNAMIC_CONFIG_ENABLED: 'true'
 
+  # Web-based viewer of C4 models using the Structurizr DSL
+  # Available from http://localhost:9002
+  structurizr:
+    image: structurizr/lite:latest
+    ports:
+      - 9002:8080
+    volumes:
+      - ./structurizr:/usr/local/structurizr
+
   # 3-node Kafka cluster
   kafka-0:
     image: docker.io/bitnami/kafka:3.5
-    ports:
-      - 9094:9094
     environment:
       # KRaft settings
       - KAFKA_CFG_NODE_ID=0
@@ -79,6 +114,8 @@ services:
       # Default topic settings
       - KAFKA_CFG_NUM_PARTITIONS=6
       - KAFKA_CFG_DEFAULT_REPLICATION_FACTOR=3
+      # Disable automated topic creation
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=false
       # JMX port for metrics
       - JMX_PORT=9997
       - KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=kafka-0 -Dcom.sun.management.jmxremote.rmi.port=9997
@@ -91,8 +128,6 @@ services:
     
   kafka-1:
     image: docker.io/bitnami/kafka:3.5
-    ports:
-      - 9095:9094
     environment:
       # KRaft settings
       - KAFKA_CFG_NODE_ID=1
@@ -108,15 +143,16 @@ services:
       # Default topic settings
       - KAFKA_CFG_NUM_PARTITIONS=6
       - KAFKA_CFG_DEFAULT_REPLICATION_FACTOR=3
+      # Disable automated topic creation
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=false
       # JMX port for metrics
       - JMX_PORT=9997
       - KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=kafka-1 -Dcom.sun.management.jmxremote.rmi.port=9997
     volumes:
       - kafka_1_data:/bitnami/kafka
+
   kafka-2:
     image: docker.io/bitnami/kafka:3.5
-    ports:
-      - 9096:9094
     environment:
       # KRaft settings
       - KAFKA_CFG_NODE_ID=2
@@ -132,26 +168,17 @@ services:
       # Default topic settings
       - KAFKA_CFG_NUM_PARTITIONS=6
       - KAFKA_CFG_DEFAULT_REPLICATION_FACTOR=3
+      # Disable automated topic creation
+      - KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE=false
       # JMX port for metrics
       - JMX_PORT=9997
       - KAFKA_JMX_OPTS=-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=kafka-2 -Dcom.sun.management.jmxremote.rmi.port=9997
     volumes:
       - kafka_2_data:/bitnami/kafka
 
-  # Web-based viewer of C4 models using the Structurizr DSL
-  structurizr:
-    image: structurizr/lite:latest
-    ports:
-      - 8081:8080
-    volumes:
-      - ./structurizr:/usr/local/structurizr
-
 volumes:
-  mariadb_data:
-    driver: local
+  tododb_data:
+  countsdb_data:
   kafka_0_data:
-    driver: local
   kafka_1_data:
-    driver: local
   kafka_2_data:
-    driver: local

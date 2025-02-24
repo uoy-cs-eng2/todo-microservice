@@ -16,7 +16,7 @@ workspace "To-Do" "Example to-do list system" {
       u = person "User"
       admin = person "Administrator"
       s = softwareSystem "To-Do System" {
-          cli = container "To-Do CLI Client"
+          ui = container "Swagger UI"
 
           micronaut = container "To-Do Microservice" {
             domain = component "Domain objects and DTOs"
@@ -27,7 +27,14 @@ workspace "To-Do" "Example to-do list system" {
             resources = component "Resources"
           }
 
+          counts = container "Edit Count Consumers" {
+            cdomain = component "Domain objects and DTOs"
+            crepos = component "Repositories"
+            cevents = component "Kafka consumers and producers"
+          }
+
           database = container "To-Do Database" "" "MariaDB" "database"
+          countsdb = container "Edit Counts Database" "" "MariaDB" "database"
           kafka = container "Kafka Cluster"
           kafkaui = container "Kafka-UI Webapp" "" "" webapp
           adminer = container "Adminer Webapp" "" "" webapp
@@ -38,18 +45,22 @@ workspace "To-Do" "Example to-do list system" {
 
       s -> currency "Invokes API"
 
-      u -> cli "Uses"
+      u -> ui "Uses"
       admin -> kafkaui "Manages"
       admin -> adminer "Uses"
 
-      cli -> micronaut "Interacts with HTTP API"
+      ui -> micronaut "Interacts with HTTP API"
 
       micronaut -> database "Reads from and writes to"
       micronaut -> kafka "Consumes and produces events"
       micronaut -> currency "Invokes API"
 
+      counts -> countsdb "Reads from and writes to"
+      counts -> kafka "Consumes and produces events"
+
       kafkaui -> kafka "Manages"
       adminer -> database "Manages"
+      adminer -> countsdb "Manages"
 
       repos -> domain "Creates and updates"
       repos -> database "Queries and writes to"
@@ -61,8 +72,12 @@ workspace "To-Do" "Example to-do list system" {
       resources -> services "Uses"
       resources -> domain "Reads and updates"
       currency_gateway -> currency "Invokes"
-      cli -> resources "Invokes"
+      ui -> resources "Invokes"
       events -> kafka "Consumes and produces events in"
+
+      crepos -> cdomain "Creates and updates"
+      crepos -> countsdb "Queries and writes to"
+      cevents -> kafka "Consumes and produces events in"      
     }
 
     views {
@@ -74,6 +89,9 @@ workspace "To-Do" "Example to-do list system" {
             include *
         }
         component micronaut {
+            include *
+        }
+        component counts {
             include *
         }
         styles {
