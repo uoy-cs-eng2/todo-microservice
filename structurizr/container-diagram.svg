@@ -1,2137 +1,3033 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.1"
-   viewBox="0 0 2169.3779 2570.8799"
-   id="svg579"
-   sodipodi:docname="structurizr-1-Container-001.svg"
-   width="2169.3779"
-   height="2570.8799"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   viewBox="0 0 2649.5 1926.5"
+   id="svg139"
+   sodipodi:docname="container-diagram.svg"
+   width="2649.5"
+   height="1926.5"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview581"
+     id="namedview139"
      pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
+     bordercolor="#000000"
+     borderopacity="0.25"
      inkscape:showpageshadow="2"
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="0.36796847"
-     inkscape:cx="1462.0818"
-     inkscape:cy="1198.4722"
-     inkscape:window-width="2560"
-     inkscape:window-height="1377"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg579" />
+     inkscape:zoom="0.1810559"
+     inkscape:cx="1328.319"
+     inkscape:cy="1195.7633"
+     inkscape:window-width="1392"
+     inkscape:window-height="1212"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg139" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);</style>
+  </defs>
   <defs
      joint-selector="defs"
      id="defs2" />
   <g
-     joint-selector="layers"
-     id="g577"
-     transform="translate(-21.122,-198)">
+     id="j_173"
+     transform="translate(11,1045.5)">
     <g
-       id="g4" />
+       id="v-2348"
+       style="opacity:1">
+      <rect
+         x="0"
+         y="160"
+         width="400"
+         height="240"
+         rx="70"
+         id="v-2350"
+         stroke="#073b6f"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#08427b"
+         style="fill:#08427b;stroke:#073b6f" />
+      <circle
+         cx="200"
+         cy="88.888885"
+         r="88.888885"
+         id="v-2349"
+         stroke="#073b6f"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#08427b"
+         style="fill:#08427b;stroke:#073b6f" />
+      <line
+         x1="80"
+         y1="266.66666"
+         x2="80"
+         y2="400"
+         id="v-2356"
+         stroke="#073b6f"
+         stroke-width="2"
+         style="stroke:#073b6f" />
+      <line
+         x1="320"
+         y1="266.66666"
+         x2="320"
+         y2="400"
+         id="v-2357"
+         stroke="#073b6f"
+         stroke-width="2"
+         style="stroke:#073b6f" />
+      <text
+         id="v-2351"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(200,251.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan4">User</tspan></text>
+      <text
+         id="v-2352"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(200,292.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan5">[Person]</tspan></text>
+      <text
+         id="v-2353"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(200,313.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan6">-</tspan></text>
+      <g
+         id="v-2354"
+         font-weight="normal"
+         text-anchor="middle"
+         color="#ffffff"
+         transform="translate(197.5,368)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           id="g6" />
+        <g
+           id="g7" />
+        <g
+           id="g8" />
+        <g
+           id="g9" />
+      </g>
+      <image
+         id="v-2355" />
+    </g>
+  </g>
+  <g
+     id="j_174"
+     transform="translate(1,275.5)">
     <g
-       id="g569">
+       id="v-2358"
+       style="opacity:1">
+      <rect
+         x="0"
+         y="160"
+         width="400"
+         height="240"
+         rx="70"
+         id="v-2360"
+         stroke="#073b6f"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#08427b"
+         style="fill:#08427b;stroke:#073b6f" />
+      <circle
+         cx="200"
+         cy="88.888885"
+         r="88.888885"
+         id="v-2359"
+         stroke="#073b6f"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#08427b"
+         style="fill:#08427b;stroke:#073b6f" />
+      <line
+         x1="80"
+         y1="266.66666"
+         x2="80"
+         y2="400"
+         id="v-2366"
+         stroke="#073b6f"
+         stroke-width="2"
+         style="stroke:#073b6f" />
+      <line
+         x1="320"
+         y1="266.66666"
+         x2="320"
+         y2="400"
+         id="v-2367"
+         stroke="#073b6f"
+         stroke-width="2"
+         style="stroke:#073b6f" />
+      <text
+         id="v-2361"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(200,251.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan9">Administrator</tspan></text>
+      <text
+         id="v-2362"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(200,292.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan10">[Person]</tspan></text>
+      <text
+         id="v-2363"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(200,313.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan11">-</tspan></text>
       <g
-         id="j_97"
-         transform="translate(20,2746)">
+         id="v-2364"
+         font-weight="normal"
+         text-anchor="middle"
+         color="#ffffff"
+         transform="translate(197.5,368)"
+         display="none"
+         style="fill:#ffffff">
         <g
-           id="v-1038">
-          <text
-             id="v-1039"
-             font-size="22px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="normal"
-             text-anchor="start"
-             fill="#aaaaaa"
-             pointer-events="none"
-             font-family="'Open Sans'"
-             display="block"><tspan
-               dy="0"
-               id="tspan6">Sunday, October 15, 2023 at 11:57 AM British Summer Time</tspan></text>
-        </g>
+           id="g11" />
+        <g
+           id="g12" />
+        <g
+           id="g13" />
+        <g
+           id="g14" />
       </g>
+      <image
+         id="v-2365" />
+    </g>
+  </g>
+  <g
+     id="j_176"
+     transform="translate(671,0.5)">
+    <g
+       id="v-2375">
+      <rect
+         id="v-2376"
+         width="1978"
+         height="1536"
+         rx="0"
+         ry="0"
+         fill="#ffffff"
+         stroke="#0f5eaa"
+         stroke-width="1"
+         stroke-dasharray="20, 20"
+         pointer-events="none"
+         x="0"
+         y="0" />
+      <text
+         id="v-2377"
+         font-size="24px"
+         xml:space="preserve"
+         y="1497"
+         font-weight="normal"
+         fill="#0f5eaa"
+         text-anchor="start"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         transform="translate(15)"><tspan
+           dy="0"
+           id="tspan14">To-Do System</tspan></text>
+      <text
+         id="v-2378"
+         font-size="17px"
+         xml:space="preserve"
+         y="1521"
+         font-weight="normal"
+         fill="#0f5eaa"
+         text-anchor="start"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         transform="translate(15)"><tspan
+           dy="0"
+           id="tspan15">[Software System]</tspan></text>
+      <image
+         id="v-2379"
+         pointer-events="visible" />
+    </g>
+  </g>
+  <g
+     id="j_175"
+     transform="translate(721,1135.5)">
+    <g
+       id="v-2368"
+       style="opacity:1">
+      <rect
+         id="v-2369"
+         rx="20"
+         ry="20"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="450"
+         height="300"
+         style="fill:#438dd5;stroke:#3c7fc0"
+         x="0"
+         y="0" />
+      <text
+         id="v-2370"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,121.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan16">Swagger UI</tspan></text>
+      <text
+         id="v-2371"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,162.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan17">[Container]</tspan></text>
+      <text
+         id="v-2372"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,183.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan18">-</tspan></text>
       <g
-         id="j_96"
-         transform="translate(20,2702)">
+         id="v-2373"
+         color="#ffffff"
+         transform="translate(222.5,268)"
+         display="none"
+         style="fill:#ffffff">
         <g
-           id="v-1036">
-          <text
-             id="v-1037"
-             font-size="36px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="normal"
-             text-anchor="start"
-             fill="#000000"
-             pointer-events="none"
-             font-family="'Open Sans'"
-             display="block"><tspan
-               dy="0"
-               id="tspan11">[Container] Software System</tspan></text>
-        </g>
+           id="g18" />
+        <g
+           id="g19" />
+        <g
+           id="g20" />
+        <g
+           id="g21" />
       </g>
+      <image
+         id="v-2374" />
+    </g>
+  </g>
+  <g
+     id="j_177"
+     transform="translate(1451,1145.5)">
+    <g
+       id="v-2383"
+       style="opacity:1">
+      <rect
+         id="v-2384"
+         rx="20"
+         ry="20"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="450"
+         height="300"
+         style="fill:#438dd5;stroke:#3c7fc0"
+         x="0"
+         y="0" />
+      <text
+         id="v-2385"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,121.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan21">To-Do Microservice</tspan></text>
+      <text
+         id="v-2386"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,162.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan22">[Container]</tspan></text>
+      <text
+         id="v-2387"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,183.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan23">-</tspan></text>
       <g
-         id="j_79"
-         transform="translate(245,199)">
+         id="v-2388"
+         color="#ffffff"
+         transform="translate(210,268)"
+         display="none"
+         style="fill:#ffffff">
         <g
-           id="v-825"
-           style="opacity:1">
-          <rect
-             x="0"
-             y="160"
-             width="400"
-             height="240"
-             rx="70"
-             id="v-827"
-             stroke="#073b6f"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#08427b"
-             style="fill:#08427b;stroke:#073b6f" />
-          <circle
-             cx="200"
-             cy="88.888885"
-             r="88.888885"
-             id="v-826"
-             stroke="#073b6f"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#08427b"
-             style="fill:#08427b;stroke:#073b6f" />
-          <line
-             x1="80"
-             y1="266.66666"
-             x2="80"
-             y2="400"
-             id="v-833"
-             stroke="#073b6f"
-             stroke-width="2"
-             style="stroke:#073b6f" />
-          <line
-             x1="320"
-             y1="266.66666"
-             x2="320"
-             y2="400"
-             id="v-834"
-             stroke="#073b6f"
-             stroke-width="2"
-             style="stroke:#073b6f" />
-          <text
-             id="v-828"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(200,243.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan20">User</tspan></text>
-          <text
-             id="v-829"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(200,285.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan23">[Person]</tspan></text>
-          <text
-             id="v-830"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(200,316.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan26">-</tspan></text>
-          <g
-             id="v-831"
-             font-weight="normal"
-             text-anchor="middle"
-             color="#ffffff"
-             transform="translate(197.5,326.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g29" />
-            <g
-               id="g31" />
-            <g
-               id="g33" />
-            <g
-               id="g35" />
-          </g>
-          <image
-             id="v-832" />
-        </g>
-      </g>
-      <g
-         id="j_80"
-         transform="translate(1350,200)">
-        <g
-           id="v-835"
-           style="opacity:1">
-          <rect
-             x="0"
-             y="160"
-             width="400"
-             height="240"
-             rx="70"
-             id="v-837"
-             stroke="#073b6f"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#08427b"
-             style="fill:#08427b;stroke:#073b6f" />
-          <circle
-             cx="200"
-             cy="88.888885"
-             r="88.888885"
-             id="v-836"
-             stroke="#073b6f"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#08427b"
-             style="fill:#08427b;stroke:#073b6f" />
-          <line
-             x1="80"
-             y1="266.66666"
-             x2="80"
-             y2="400"
-             id="v-843"
-             stroke="#073b6f"
-             stroke-width="2"
-             style="stroke:#073b6f" />
-          <line
-             x1="320"
-             y1="266.66666"
-             x2="320"
-             y2="400"
-             id="v-844"
-             stroke="#073b6f"
-             stroke-width="2"
-             style="stroke:#073b6f" />
-          <text
-             id="v-838"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(200,243.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan45">Administrator</tspan></text>
-          <text
-             id="v-839"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(200,285.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan48">[Person]</tspan></text>
-          <text
-             id="v-840"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(200,316.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan51">-</tspan></text>
-          <g
-             id="v-841"
-             font-weight="normal"
-             text-anchor="middle"
-             color="#ffffff"
-             transform="translate(197.5,326.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g54" />
-            <g
-               id="g56" />
-            <g
-               id="g58" />
-            <g
-               id="g60" />
-          </g>
-          <image
-             id="v-842" />
-        </g>
-      </g>
-      <g
-         id="j_82"
-         transform="translate(200,929)">
-        <g
-           id="v-855">
-          <rect
-             id="v-856"
-             width="1990"
-             height="1661"
-             rx="0"
-             ry="0"
-             fill="#ffffff"
-             stroke="#0f5eaa"
-             stroke-width="1"
-             stroke-dasharray="20, 20"
-             pointer-events="none"
-             x="0"
-             y="0" />
-          <text
-             id="v-857"
-             font-size="24px"
-             xml:space="preserve"
-             y="1622"
-             font-weight="normal"
-             fill="#0f5eaa"
-             text-anchor="start"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             transform="translate(15)"><tspan
-               dy="0"
-               id="tspan67">Software System</tspan></text>
-          <text
-             id="v-858"
-             font-size="17px"
-             xml:space="preserve"
-             y="1646"
-             font-weight="normal"
-             fill="#0f5eaa"
-             text-anchor="start"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             transform="translate(15)"><tspan
-               dy="0"
-               id="tspan70">[Software System]</tspan></text>
-          <image
-             id="v-859"
-             pointer-events="visible" />
-        </g>
-      </g>
-      <g
-         id="j_81"
-         transform="translate(220,949)">
-        <g
-           id="v-848"
-           style="opacity:1">
-          <rect
-             id="v-849"
-             rx="20"
-             ry="20"
-             stroke="#3c7fc0"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             width="450"
-             height="300"
-             style="fill:#438dd5;stroke:#3c7fc0"
-             x="0"
-             y="0" />
-          <text
-             id="v-850"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,113.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan77">To-Do CLI Client</tspan></text>
-          <text
-             id="v-851"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,155.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan80">[Container]</tspan></text>
-          <text
-             id="v-852"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,186.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan83">-</tspan></text>
-          <g
-             id="v-853"
-             color="#ffffff"
-             transform="translate(222.5,196.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g86" />
-            <g
-               id="g88" />
-            <g
-               id="g90" />
-            <g
-               id="g92" />
-          </g>
-          <image
-             id="v-854" />
-        </g>
-      </g>
-      <g
-         id="j_83"
-         transform="translate(220,1599)">
-        <g
-           id="v-863"
-           style="opacity:1">
-          <rect
-             id="v-864"
-             rx="20"
-             ry="20"
-             stroke="#3c7fc0"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             width="450"
-             height="300"
-             style="fill:#438dd5;stroke:#3c7fc0"
-             x="0"
-             y="0" />
-          <text
-             id="v-865"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,113.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan99">To-Do Microservice</tspan></text>
-          <text
-             id="v-866"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,155.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan102">[Container]</tspan></text>
-          <text
-             id="v-867"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,186.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan105">-</tspan></text>
-          <g
-             id="v-868"
-             color="#ffffff"
-             transform="translate(222.5,196.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g108" />
-            <g
-               id="g110" />
-            <g
-               id="g112" />
-            <g
-               id="g114" />
-          </g>
-          <image
-             id="v-869" />
-        </g>
-      </g>
-      <g
-         id="j_84"
-         transform="translate(1532,2199)">
-        <g
-           id="v-870"
-           style="opacity:1">
-          <path
-             d="M 0,30 A 225,30 0 0 0 450,30 225,30 0 0 0 0,30 v 240 a 225,30 0 0 0 450,0 V 30"
-             id="v-871"
-             stroke="#3c7fc0"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             style="fill:#438dd5;stroke:#3c7fc0" />
-          <rect
-             id="v-872"
-             stroke-width="0"
-             pointer-events="visiblePainted"
-             fill="none"
-             stroke="none"
-             width="450"
-             height="270"
-             x="0"
-             y="30" />
-          <text
-             id="v-873"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,143.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan122">To-Do Databsae</tspan></text>
-          <text
-             id="v-874"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,185.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan125">[Container: MariaDB]</tspan></text>
-          <text
-             id="v-875"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,216.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan128">-</tspan></text>
-          <g
-             id="v-876"
-             font-weight="normal"
-             text-anchor="middle"
-             color="#ffffff"
-             transform="translate(222.5,226.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g131" />
-            <g
-               id="g133" />
-            <g
-               id="g135" />
-            <g
-               id="g137" />
-          </g>
-          <image
-             id="v-877" />
-        </g>
-      </g>
-      <g
-         id="j_85"
-         transform="translate(595,2199)">
-        <g
-           id="v-878"
-           style="opacity:1">
-          <rect
-             id="v-879"
-             rx="20"
-             ry="20"
-             stroke="#3c7fc0"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             width="450"
-             height="300"
-             style="fill:#438dd5;stroke:#3c7fc0"
-             x="0"
-             y="0" />
-          <text
-             id="v-880"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,113.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan144">Kafka Cluster</tspan></text>
-          <text
-             id="v-881"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,155.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan147">[Container]</tspan></text>
-          <text
-             id="v-882"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,186.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan150">-</tspan></text>
-          <g
-             id="v-883"
-             color="#ffffff"
-             transform="translate(222.5,196.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g153" />
-            <g
-               id="g155" />
-            <g
-               id="g157" />
-            <g
-               id="g159" />
-          </g>
-          <image
-             id="v-884" />
-        </g>
-      </g>
-      <g
-         id="j_86"
-         transform="translate(970,1599)">
-        <g
-           id="v-885"
-           style="opacity:1">
-          <rect
-             id="v-886"
-             rx="10"
-             ry="10"
-             stroke="#3c7fc0"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#3c7fc0"
-             width="450"
-             height="300"
-             style="fill:#3c7fc0;stroke:#3c7fc0"
-             x="0"
-             y="0" />
-          <rect
-             id="v-887"
-             rx="10"
-             ry="10"
-             stroke="#3c7fc0"
-             stroke-width="0"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             width="430"
-             height="250"
-             x="10"
-             y="40"
-             style="fill:#438dd5" />
-          <circle
-             id="v-894"
-             fill="#438dd5"
-             cx="20"
-             cy="20"
-             style="fill:#438dd5"
-             r="10" />
-          <circle
-             id="v-895"
-             fill="#438dd5"
-             cx="50"
-             cy="20"
-             style="fill:#438dd5"
-             r="10" />
-          <circle
-             id="v-896"
-             fill="#438dd5"
-             cx="80"
-             cy="20"
-             style="fill:#438dd5"
-             r="10" />
-          <rect
-             id="v-888"
-             rx="10"
-             ry="10"
-             stroke="#444444"
-             stroke-width="0"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             width="340"
+           transform="translate(5)"
+           id="g25">
+          <svg
+             width="20"
              height="20"
-             x="100"
-             y="10"
-             style="fill:#438dd5" />
-          <text
-             id="v-889"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,128.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan171">Kafka-UI Webapp</tspan></text>
-          <text
-             id="v-890"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,170.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan174">[Container]</tspan></text>
-          <text
-             id="v-891"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,201.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan177">-</tspan></text>
-          <g
-             id="v-892"
-             font-weight="normal"
-             text-anchor="middle"
-             color="#ffffff"
-             transform="translate(222.5,211.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g180" />
-            <g
-               id="g182" />
-            <g
-               id="g184" />
-            <g
-               id="g186" />
-          </g>
-          <image
-             id="v-893" />
+             fill="currentColor"
+             viewBox="0 0 16 16"
+             version="1.1"
+             id="svg25">
+            <path
+               fill-rule="evenodd"
+               d="m 6.5,12 a 5.5,5.5 0 1 0 0,-11 5.5,5.5 0 0 0 0,11 z M 13,6.5 a 6.5,6.5 0 1 1 -13,0 6.5,6.5 0 0 1 13,0 z"
+               id="path23" />
+            <path
+               d="m 10.344,11.742 c 0.03,0.04 0.062,0.078 0.098,0.115 l 3.85,3.85 a 1.0002026,1.0002026 0 0 0 1.415,-1.414 l -3.85,-3.85 a 1.007,1.007 0 0 0 -0.115,-0.1 6.538,6.538 0 0 1 -1.398,1.4 z"
+               id="path24" />
+            <path
+               fill-rule="evenodd"
+               d="M 6.5,3 A 0.5,0.5 0 0 1 7,3.5 V 6 h 2.5 a 0.5,0.5 0 0 1 0,1 H 7 v 2.5 a 0.5,0.5 0 0 1 -1,0 V 7 H 3.5 a 0.5,0.5 0 0 1 0,-1 H 6 V 3.5 A 0.5,0.5 0 0 1 6.5,3 Z"
+               id="path25" />
+          </svg>
         </g>
-      </g>
-      <g
-         id="j_87"
-         transform="translate(1720,1599)">
         <g
-           id="v-897"
-           style="opacity:1">
-          <rect
-             id="v-898"
-             rx="10"
-             ry="10"
-             stroke="#3c7fc0"
-             stroke-width="2"
-             pointer-events="visiblePainted"
-             fill="#3c7fc0"
-             width="450"
-             height="300"
-             style="fill:#3c7fc0;stroke:#3c7fc0"
-             x="0"
-             y="0" />
-          <rect
-             id="v-899"
-             rx="10"
-             ry="10"
-             stroke="#3c7fc0"
-             stroke-width="0"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             width="430"
-             height="250"
-             x="10"
-             y="40"
-             style="fill:#438dd5" />
-          <circle
-             id="v-906"
-             fill="#438dd5"
-             cx="20"
-             cy="20"
-             style="fill:#438dd5"
-             r="10" />
-          <circle
-             id="v-907"
-             fill="#438dd5"
-             cx="50"
-             cy="20"
-             style="fill:#438dd5"
-             r="10" />
-          <circle
-             id="v-908"
-             fill="#438dd5"
-             cx="80"
-             cy="20"
-             style="fill:#438dd5"
-             r="10" />
-          <rect
-             id="v-900"
-             rx="10"
-             ry="10"
-             stroke="#444444"
-             stroke-width="0"
-             pointer-events="visiblePainted"
-             fill="#438dd5"
-             width="340"
+           id="g26" />
+        <g
+           id="g27" />
+        <g
+           id="g28" />
+      </g>
+      <image
+         id="v-2389" />
+    </g>
+  </g>
+  <g
+     id="j_178"
+     transform="translate(2171,540.5)">
+    <g
+       id="v-2393"
+       style="opacity:1">
+      <rect
+         id="v-2394"
+         rx="20"
+         ry="20"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="450"
+         height="300"
+         style="fill:#438dd5;stroke:#3c7fc0"
+         x="0"
+         y="0" />
+      <text
+         id="v-2395"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,121.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan28">Edit Count Consumers</tspan></text>
+      <text
+         id="v-2396"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,162.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan29">[Container]</tspan></text>
+      <text
+         id="v-2397"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,183.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan30">-</tspan></text>
+      <g
+         id="v-2398"
+         color="#ffffff"
+         transform="translate(210,268)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           transform="translate(5)"
+           id="g32">
+          <svg
+             width="20"
              height="20"
-             x="100"
-             y="10"
-             style="fill:#438dd5" />
-          <text
-             id="v-901"
-             font-size="34px"
-             xml:space="preserve"
-             y="0.80000001em"
-             font-weight="bold"
-             text-anchor="middle"
-             pointer-events="visible"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,128.1)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan198">Adminer Webapp</tspan></text>
-          <text
-             id="v-902"
-             font-size="17px"
-             xml:space="preserve"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,170.6)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               id="tspan201">[Container]</tspan></text>
-          <text
-             id="v-903"
-             font-size="24px"
-             xml:space="preserve"
-             display="none"
-             y="0.80000001em"
-             text-anchor="middle"
-             font-family="'Open Sans'"
-             fill="#ffffff"
-             transform="translate(225,201.9)"
-             style="fill:#ffffff"><tspan
-               dy="0"
-               style="fill-opacity:0;stroke-opacity:0"
-               id="tspan204">-</tspan></text>
-          <g
-             id="v-904"
-             font-weight="normal"
-             text-anchor="middle"
-             color="#ffffff"
-             transform="translate(222.5,211.9)"
-             display="none"
-             style="fill:#ffffff">
-            <g
-               id="g207" />
-            <g
-               id="g209" />
-            <g
-               id="g211" />
-            <g
-               id="g213" />
-          </g>
-          <image
-             id="v-905" />
+             fill="currentColor"
+             viewBox="0 0 16 16"
+             version="1.1"
+             id="svg32">
+            <path
+               fill-rule="evenodd"
+               d="m 6.5,12 a 5.5,5.5 0 1 0 0,-11 5.5,5.5 0 0 0 0,11 z M 13,6.5 a 6.5,6.5 0 1 1 -13,0 6.5,6.5 0 0 1 13,0 z"
+               id="path30" />
+            <path
+               d="m 10.344,11.742 c 0.03,0.04 0.062,0.078 0.098,0.115 l 3.85,3.85 a 1.0002026,1.0002026 0 0 0 1.415,-1.414 l -3.85,-3.85 a 1.007,1.007 0 0 0 -0.115,-0.1 6.538,6.538 0 0 1 -1.398,1.4 z"
+               id="path31" />
+            <path
+               fill-rule="evenodd"
+               d="M 6.5,3 A 0.5,0.5 0 0 1 7,3.5 V 6 h 2.5 a 0.5,0.5 0 0 1 0,1 H 7 v 2.5 a 0.5,0.5 0 0 1 -1,0 V 7 H 3.5 a 0.5,0.5 0 0 1 0,-1 H 6 V 3.5 A 0.5,0.5 0 0 1 6.5,3 Z"
+               id="path32" />
+          </svg>
         </g>
+        <g
+           id="g33" />
+        <g
+           id="g34" />
+        <g
+           id="g35" />
+      </g>
+      <image
+         id="v-2399" />
+    </g>
+  </g>
+  <g
+     id="j_179"
+     transform="translate(1456,540.5)">
+    <g
+       id="v-2400"
+       style="opacity:1">
+      <path
+         d="M 0,30 A 225,30 0 0 0 450,30 225,30 0 0 0 0,30 v 240 a 225,30 0 0 0 450,0 V 30"
+         id="v-2401"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         style="fill:#438dd5;stroke:#3c7fc0" />
+      <rect
+         id="v-2402"
+         stroke-width="0"
+         pointer-events="visiblePainted"
+         fill="none"
+         stroke="none"
+         width="450"
+         height="270"
+         x="0"
+         y="30" />
+      <text
+         id="v-2403"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,144.4)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan35">To-Do Database</tspan></text>
+      <text
+         id="v-2404"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,185.2)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan36">[Container: MariaDB]</tspan></text>
+      <text
+         id="v-2405"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,205.6)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan37">-</tspan></text>
+      <g
+         id="v-2406"
+         font-weight="normal"
+         text-anchor="middle"
+         color="#ffffff"
+         transform="translate(222.5,268)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           id="g37" />
+        <g
+           id="g38" />
+        <g
+           id="g39" />
+        <g
+           id="g40" />
+      </g>
+      <image
+         id="v-2407" />
+    </g>
+  </g>
+  <g
+     id="j_180"
+     transform="translate(1446,30.5)">
+    <g
+       id="v-2411"
+       style="opacity:1">
+      <path
+         d="M 0,30 A 225,30 0 0 0 450,30 225,30 0 0 0 0,30 v 240 a 225,30 0 0 0 450,0 V 30"
+         id="v-2412"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         style="fill:#438dd5;stroke:#3c7fc0" />
+      <rect
+         id="v-2413"
+         stroke-width="0"
+         pointer-events="visiblePainted"
+         fill="none"
+         stroke="none"
+         width="450"
+         height="270"
+         x="0"
+         y="30" />
+      <text
+         id="v-2414"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,144.4)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan40">Edit Counts Database</tspan></text>
+      <text
+         id="v-2415"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,185.2)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan41">[Container: MariaDB]</tspan></text>
+      <text
+         id="v-2416"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,205.6)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan42">-</tspan></text>
+      <g
+         id="v-2417"
+         font-weight="normal"
+         text-anchor="middle"
+         color="#ffffff"
+         transform="translate(222.5,268)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           id="g42" />
+        <g
+           id="g43" />
+        <g
+           id="g44" />
+        <g
+           id="g45" />
+      </g>
+      <image
+         id="v-2418" />
+    </g>
+  </g>
+  <g
+     id="j_181"
+     transform="translate(2179,1144.5)">
+    <g
+       id="v-2419"
+       style="opacity:1">
+      <rect
+         id="v-2420"
+         rx="20"
+         ry="20"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="450"
+         height="300"
+         style="fill:#438dd5;stroke:#3c7fc0"
+         x="0"
+         y="0" />
+      <text
+         id="v-2421"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,121.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan45">Kafka Cluster</tspan></text>
+      <text
+         id="v-2422"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,162.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan46">[Container]</tspan></text>
+      <text
+         id="v-2423"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,183.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan47">-</tspan></text>
+      <g
+         id="v-2424"
+         color="#ffffff"
+         transform="translate(222.5,268)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           id="g47" />
+        <g
+           id="g48" />
+        <g
+           id="g49" />
+        <g
+           id="g50" />
+      </g>
+      <image
+         id="v-2425" />
+    </g>
+  </g>
+  <g
+     id="j_182"
+     transform="translate(716,545.5)">
+    <g
+       id="v-2426"
+       style="opacity:1">
+      <rect
+         id="v-2427"
+         rx="10"
+         ry="10"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#3c7fc0"
+         width="450"
+         height="300"
+         style="fill:#3c7fc0;stroke:#3c7fc0"
+         x="0"
+         y="0" />
+      <rect
+         id="v-2428"
+         rx="10"
+         ry="10"
+         stroke="#3c7fc0"
+         stroke-width="0"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="430"
+         height="250"
+         x="10"
+         y="40"
+         style="fill:#438dd5" />
+      <circle
+         id="v-2435"
+         fill="#438dd5"
+         cx="20"
+         cy="20"
+         style="fill:#438dd5"
+         r="10" />
+      <circle
+         id="v-2436"
+         fill="#438dd5"
+         cx="50"
+         cy="20"
+         style="fill:#438dd5"
+         r="10" />
+      <circle
+         id="v-2437"
+         fill="#438dd5"
+         cx="80"
+         cy="20"
+         style="fill:#438dd5"
+         r="10" />
+      <rect
+         id="v-2429"
+         rx="10"
+         ry="10"
+         stroke="#444444"
+         stroke-width="0"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="340"
+         height="20"
+         x="100"
+         y="10"
+         style="fill:#438dd5" />
+      <text
+         id="v-2430"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,136.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan50">Kafka-UI Webapp</tspan></text>
+      <text
+         id="v-2431"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,177.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan51">[Container]</tspan></text>
+      <text
+         id="v-2432"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,198.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan52">-</tspan></text>
+      <g
+         id="v-2433"
+         font-weight="normal"
+         text-anchor="middle"
+         color="#ffffff"
+         transform="translate(222.5,258)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           id="g52" />
+        <g
+           id="g53" />
+        <g
+           id="g54" />
+        <g
+           id="g55" />
+      </g>
+      <image
+         id="v-2434" />
+    </g>
+  </g>
+  <g
+     id="j_183"
+     transform="translate(691,20.5)">
+    <g
+       id="v-2438"
+       style="opacity:1">
+      <rect
+         id="v-2439"
+         rx="10"
+         ry="10"
+         stroke="#3c7fc0"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#3c7fc0"
+         width="450"
+         height="300"
+         style="fill:#3c7fc0;stroke:#3c7fc0"
+         x="0"
+         y="0" />
+      <rect
+         id="v-2440"
+         rx="10"
+         ry="10"
+         stroke="#3c7fc0"
+         stroke-width="0"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="430"
+         height="250"
+         x="10"
+         y="40"
+         style="fill:#438dd5" />
+      <circle
+         id="v-2447"
+         fill="#438dd5"
+         cx="20"
+         cy="20"
+         style="fill:#438dd5"
+         r="10" />
+      <circle
+         id="v-2448"
+         fill="#438dd5"
+         cx="50"
+         cy="20"
+         style="fill:#438dd5"
+         r="10" />
+      <circle
+         id="v-2449"
+         fill="#438dd5"
+         cx="80"
+         cy="20"
+         style="fill:#438dd5"
+         r="10" />
+      <rect
+         id="v-2441"
+         rx="10"
+         ry="10"
+         stroke="#444444"
+         stroke-width="0"
+         pointer-events="visiblePainted"
+         fill="#438dd5"
+         width="340"
+         height="20"
+         x="100"
+         y="10"
+         style="fill:#438dd5" />
+      <text
+         id="v-2442"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,136.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan55">Adminer Webapp</tspan></text>
+      <text
+         id="v-2443"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,177.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan56">[Container]</tspan></text>
+      <text
+         id="v-2444"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,198.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan57">-</tspan></text>
+      <g
+         id="v-2445"
+         font-weight="normal"
+         text-anchor="middle"
+         color="#ffffff"
+         transform="translate(222.5,258)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           id="g57" />
+        <g
+           id="g58" />
+        <g
+           id="g59" />
+        <g
+           id="g60" />
+      </g>
+      <image
+         id="v-2446" />
+    </g>
+  </g>
+  <g
+     id="j_184"
+     transform="translate(1456,1625.5)">
+    <g
+       id="v-2450"
+       style="opacity:1">
+      <rect
+         id="v-2451"
+         rx="20"
+         ry="20"
+         stroke="#737373"
+         stroke-width="2"
+         pointer-events="visiblePainted"
+         fill="#808080"
+         width="450"
+         height="300"
+         style="fill:#808080;stroke:#737373"
+         x="0"
+         y="0" />
+      <text
+         id="v-2452"
+         font-size="34px"
+         xml:space="preserve"
+         y="0.80000001em"
+         font-weight="bold"
+         text-anchor="middle"
+         pointer-events="visible"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,121.9)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan60">Currency API</tspan></text>
+      <text
+         id="v-2453"
+         font-size="17px"
+         xml:space="preserve"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,162.7)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           id="tspan61">[Software System]</tspan></text>
+      <text
+         id="v-2454"
+         font-size="24px"
+         xml:space="preserve"
+         display="none"
+         y="0.80000001em"
+         text-anchor="middle"
+         font-family="'Open Sans'"
+         fill="#ffffff"
+         transform="translate(225,183.1)"
+         style="fill:#ffffff"><tspan
+           dy="0"
+           style="fill-opacity:0;stroke-opacity:0"
+           id="tspan62">-</tspan></text>
+      <g
+         id="v-2455"
+         color="#ffffff"
+         transform="translate(222.5,268)"
+         display="none"
+         style="fill:#ffffff">
+        <g
+           id="g62" />
+        <g
+           id="g63" />
+        <g
+           id="g64" />
+        <g
+           id="g65" />
+      </g>
+      <image
+         id="v-2456" />
+    </g>
+  </g>
+  <g
+     id="j_185"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 690,1641 310,17"
+       id="v-2466"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(3.1167696,-29811.966,13501.627)"
+       id="path65" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2468"
+       transform="rotate(-176.88322,522.41423,820.27716)"
+       style="opacity:1" />
+    <path
+       d="m 690,1641 310,17"
+       id="v-2467"
+       fill="none" />
+    <g
+       id="g66">
+      <g
+         id="v-2460"
+         label-idx="0"
+         cursor="move"
+         transform="translate(845,1649.5)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2463"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="53.879154"
+           height="33.985939"
+           transform="translate(-26.9,-16.9)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2462"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-10)"><tspan
+             dy="0"
+             id="tspan65">Uses</tspan></text>
       </g>
       <g
-         id="j_88">
-        <path
-           stroke="#707070"
-           d="M 1101,1899 914,2199"
-           id="v-918"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
-           fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(122.00539,24.366898,1254.6826)"
-           id="path220" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-920"
-           transform="rotate(-57.994629,2431.6236,280.18457)"
-           style="opacity:1" />
-        <path
-           d="M 1101,1899 914,2199"
-           id="v-919"
-           fill="none" />
-        <g
-           id="g232">
-          <g
-             id="v-912"
-             label-idx="0"
-             cursor="move"
-             transform="translate(1007.5,2049)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-915"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="103.3783"
-               height="33.502823"
-               transform="translate(-50.4,-16.7)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-914"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-10.8)"><tspan
-                 dy="0"
-                 id="tspan225">Manages</tspan></text>
-          </g>
-          <g
-             id="v-913"
-             label-idx="1"
-             cursor="move"
-             transform="translate(997.5,2076)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-917"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-916"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
+         id="v-2461"
+         label-idx="1"
+         cursor="move"
+         transform="translate(835,1675.9)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2465"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
            display="none"
-           id="g234" />
-        <g
-           id="v-922"
-           display="none">
-          <g
-             id="v-910">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path236" />
-          </g>
-          <g
-             id="v-911">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path239" />
-          </g>
-        </g>
-        <g
-           id="v-921"
-           display="none">
-          <g
-             id="v-909"
-             transform="translate(1079.8407,1932.9453)">
-            <g
-               event="remove"
-               id="g249">
-              <circle
-                 r="11"
-                 id="circle243"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path245" />
-              <title
-                 id="title247">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g257">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle251"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path253" />
-              <title
-                 id="title255">Link options.</title>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         id="j_89">
-        <path
-           stroke="#707070"
-           d="m 539,1899 187,300"
-           id="v-935"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2464"
            fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(57.994617,-1443.7581,1435.5192)"
-           id="path263" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-937"
-           transform="rotate(-122.00539,969.74901,903.23884)"
-           style="opacity:1" />
-        <path
-           d="m 539,1899 187,300"
-           id="v-936"
-           fill="none" />
-        <g
-           id="g277">
-          <g
-             id="v-929"
-             label-idx="0"
-             cursor="move"
-             transform="translate(632.5,2049)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-932"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="187.02402"
-               height="62.30283"
-               transform="translate(-92.3,-31.1)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-931"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-25.2)"><tspan
-                 dy="0"
-                 id="tspan268">Consumes and</tspan><tspan
-                 dy="1.2em"
-                 x="0"
-                 id="tspan270">produces events</tspan></text>
-          </g>
-          <g
-             id="v-930"
-             label-idx="1"
-             cursor="move"
-             transform="translate(622.5,2091)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-934"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-933"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
-           display="none"
-           id="g279" />
-        <g
-           id="v-939"
-           display="none">
-          <g
-             id="v-927">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path281" />
-          </g>
-          <g
-             id="v-928">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path284" />
-          </g>
-        </g>
-        <g
-           id="v-938"
-           display="none">
-          <g
-             id="v-926"
-             transform="translate(560.15926,1932.9453)">
-            <g
-               event="remove"
-               id="g294">
-              <circle
-                 r="11"
-                 id="circle288"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path290" />
-              <title
-                 id="title292">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g302">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle296"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path298" />
-              <title
-                 id="title300">Link options.</title>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         id="j_90">
-        <path
-           stroke="#707070"
-           d="m 670,1852 862,394"
-           id="v-952"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
-           fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(24.575026,-3916.2415,2464.0092)"
-           id="path308" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-954"
-           transform="rotate(-155.42497,1009.5191,961.20985)"
-           style="opacity:1" />
-        <path
-           d="m 670,1852 862,394"
-           id="v-953"
-           fill="none" />
-        <g
-           id="g322">
-          <g
-             id="v-946"
-             label-idx="0"
-             cursor="move"
-             transform="translate(1101,2049)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-949"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="177.37305"
-               height="62.30283"
-               transform="translate(-88.7,-31.1)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-948"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-25.2)"><tspan
-                 dy="0"
-                 id="tspan313">Reads from and</tspan><tspan
-                 dy="1.2em"
-                 x="0"
-                 id="tspan315">writes to</tspan></text>
-          </g>
-          <g
-             id="v-947"
-             label-idx="1"
-             cursor="move"
-             transform="translate(1091,2091)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-951"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-950"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
-           display="none"
-           id="g324" />
-        <g
-           id="v-956"
-           display="none">
-          <g
-             id="v-944">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path326" />
-          </g>
-          <g
-             id="v-945">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path329" />
-          </g>
-        </g>
-        <g
-           id="v-955"
-           display="none">
-          <g
-             id="v-943"
-             transform="translate(706.37989,1868.6284)">
-            <g
-               event="remove"
-               id="g339">
-              <circle
-                 r="11"
-                 id="circle333"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path335" />
-              <title
-                 id="title337">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g347">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle341"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path343" />
-              <title
-                 id="title345">Link options.</title>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         id="j_91">
-        <path
-           stroke="#707070"
-           d="m 445,1249 v 350"
-           id="v-969"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
-           fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(90,-402,847)"
-           id="path353" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-971"
-           transform="rotate(-90,1017,582)"
-           style="opacity:1" />
-        <path
-           d="m 445,1249 v 350"
-           id="v-970"
-           fill="none" />
-        <g
-           id="g367">
-          <g
-             id="v-963"
-             label-idx="0"
-             cursor="move"
-             transform="translate(445,1424)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-966"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="154.18179"
-               height="62.30283"
-               transform="translate(-76.1,-31.1)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-965"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-25.2)"><tspan
-                 dy="0"
-                 id="tspan358">Interacts with</tspan><tspan
-                 dy="1.2em"
-                 x="0"
-                 id="tspan360">HTTP API</tspan></text>
-          </g>
-          <g
-             id="v-964"
-             label-idx="1"
-             cursor="move"
-             transform="translate(435,1466)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-968"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-967"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
-           display="none"
-           id="g369" />
-        <g
-           id="v-973"
-           display="none">
-          <g
-             id="v-961">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path371" />
-          </g>
-          <g
-             id="v-962">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path374" />
-          </g>
-        </g>
-        <g
-           id="v-972"
-           display="none">
-          <g
-             id="v-960"
-             transform="translate(445,1289)">
-            <g
-               event="remove"
-               id="g384">
-              <circle
-                 r="11"
-                 id="circle378"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path380" />
-              <title
-                 id="title382">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g392">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle386"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path388" />
-              <title
-                 id="title390">Link options.</title>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         id="j_92">
-        <path
-           stroke="#707070"
-           d="m 1609,600 292,999"
-           id="v-983"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
-           fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(73.679291,403.83972,1373.5538)"
-           id="path398" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-985"
-           transform="rotate(-106.32071,1545.7598,92.378871)"
-           style="opacity:1" />
-        <path
-           d="m 1609,600 292,999"
-           id="v-984"
-           fill="none" />
-        <g
-           id="g410">
-          <g
-             id="v-977"
-             label-idx="0"
-             cursor="move"
-             transform="translate(1755,1099.5)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-980"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="56.338566"
-               height="33.502823"
-               transform="translate(-26.9,-16.7)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-979"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-10.8)"><tspan
-                 dy="0"
-                 id="tspan403">Uses</tspan></text>
-          </g>
-          <g
-             id="v-978"
-             label-idx="1"
-             cursor="move"
-             transform="translate(1745,1126.5)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-982"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-981"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
-           display="none"
-           id="g412" />
-        <g
-           id="v-987"
-           display="none">
-          <g
-             id="v-975">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path414" />
-          </g>
-          <g
-             id="v-976">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path417" />
-          </g>
-        </g>
-        <g
-           id="v-986"
-           display="none">
-          <g
-             id="v-974"
-             transform="translate(1620.2221,638.39354)">
-            <g
-               event="remove"
-               id="g427">
-              <circle
-                 r="11"
-                 id="circle421"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path423" />
-              <title
-                 id="title425">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g435">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle429"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path431" />
-              <title
-                 id="title433">Link options.</title>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         id="j_93">
-        <path
-           stroke="#707070"
-           d="m 1497,600 -263,999"
-           id="v-997"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
-           fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(104.74384,517.4196,877.14978)"
-           id="path441" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-999"
-           transform="rotate(-75.256165,1647.8689,3.8160872)"
-           style="opacity:1" />
-        <path
-           d="m 1497,600 -263,999"
-           id="v-998"
-           fill="none" />
-        <g
-           id="g453">
-          <g
-             id="v-991"
-             label-idx="0"
-             cursor="move"
-             transform="translate(1365.5,1099.5)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-994"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="103.3783"
-               height="33.502823"
-               transform="translate(-50.4,-16.7)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-993"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-10.8)"><tspan
-                 dy="0"
-                 id="tspan446">Manages</tspan></text>
-          </g>
-          <g
-             id="v-992"
-             label-idx="1"
-             cursor="move"
-             transform="translate(1355.5,1126.5)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-996"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-995"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
-           display="none"
-           id="g455" />
-        <g
-           id="v-1001"
-           display="none">
-          <g
-             id="v-989">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path457" />
-          </g>
-          <g
-             id="v-990">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path460" />
-          </g>
-        </g>
-        <g
-           id="v-1000"
-           display="none">
-          <g
-             id="v-988"
-             transform="translate(1486.8165,638.68198)">
-            <g
-               event="remove"
-               id="g470">
-              <circle
-                 r="11"
-                 id="circle464"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path466" />
-              <title
-                 id="title468">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g478">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle472"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path474" />
-              <title
-                 id="title476">Link options.</title>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         id="j_94">
-        <path
-           stroke="#707070"
-           d="M 445,599 V 949"
-           id="v-1011"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
-           fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(90,-77,522)"
-           id="path484" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-1013"
-           transform="rotate(-90,692,257)"
-           style="opacity:1" />
-        <path
-           d="M 445,599 V 949"
-           id="v-1012"
-           fill="none" />
-        <g
-           id="g496">
-          <g
-             id="v-1005"
-             label-idx="0"
-             cursor="move"
-             transform="translate(445,774)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-1008"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="56.338566"
-               height="33.502823"
-               transform="translate(-26.9,-16.7)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-1007"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-10.8)"><tspan
-                 dy="0"
-                 id="tspan489">Uses</tspan></text>
-          </g>
-          <g
-             id="v-1006"
-             label-idx="1"
-             cursor="move"
-             transform="translate(435,801)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-1010"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-1009"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
-           display="none"
-           id="g498" />
-        <g
-           id="v-1015"
-           display="none">
-          <g
-             id="v-1003">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path500" />
-          </g>
-          <g
-             id="v-1004">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path503" />
-          </g>
-        </g>
-        <g
-           id="v-1014"
-           display="none">
-          <g
-             id="v-1002"
-             transform="translate(445,639)">
-            <g
-               event="remove"
-               id="g513">
-              <circle
-                 r="11"
-                 id="circle507"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path509" />
-              <title
-                 id="title511">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g521">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle515"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path517" />
-              <title
-                 id="title519">Link options.</title>
-            </g>
-          </g>
-        </g>
-      </g>
-      <g
-         id="j_95">
-        <path
-           stroke="#707070"
-           d="m 1898,1899 -94,300"
-           id="v-1025"
-           stroke-width="2"
-           stroke-dasharray="30, 30"
-           fill="none"
-           style="opacity:1" />
-        <path
-           fill="#000000"
-           stroke="#000000"
-           d="M 0,0 V 0"
-           transform="rotate(107.39751,251.4912,1646.6415)"
-           id="path527" />
-        <path
-           fill="#707070"
-           stroke="#707070"
-           d="M 20,0 0,10 20,20 Z"
-           id="v-1027"
-           transform="rotate(-72.602478,2391.9137,-123.36852)"
-           style="opacity:1" />
-        <path
-           d="m 1898,1899 -94,300"
-           id="v-1026"
-           fill="none" />
-        <g
-           id="g539">
-          <g
-             id="v-1019"
-             label-idx="0"
-             cursor="move"
-             transform="translate(1851,2049)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-1022"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               pointer-events="none"
-               width="103.3783"
-               height="33.502823"
-               transform="translate(-50.4,-16.7)"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-1021"
-               font-size="24px"
-               xml:space="preserve"
-               y="0.80000001em"
-               fill="#707070"
-               text-anchor="middle"
-               pointer-events="none"
-               font-family="'Open Sans'"
-               font-weight="normal"
-               transform="translate(0,-10.8)"><tspan
-                 dy="0"
-                 id="tspan532">Manages</tspan></text>
-          </g>
-          <g
-             id="v-1020"
-             label-idx="1"
-             cursor="move"
-             transform="translate(1841,2076)"
-             style="opacity:1">
-            <rect
-               joint-selector="rect"
-               id="v-1024"
-               fill="#ffffff"
-               rx="3"
-               ry="3"
-               width="0"
-               height="0"
-               display="none"
-               x="0"
-               y="0" />
-            <text
-               joint-selector="text"
-               id="v-1023"
-               fill="#000000"
-               font-size="14px"
-               text-anchor="middle"
-               pointer-events="none" />
-          </g>
-        </g>
-        <g
-           display="none"
-           id="g541" />
-        <g
-           id="v-1029"
-           display="none">
-          <g
-             id="v-1017">
-            <path
-               end="source"
-               d="M 26,0 0,13 26,26 Z"
-               id="path543" />
-          </g>
-          <g
-             id="v-1018">
-            <path
-               end="target"
-               d="M 26,0 0,13 26,26 Z"
-               id="path546" />
-          </g>
-        </g>
-        <g
-           id="v-1028"
-           display="none">
-          <g
-             id="v-1016"
-             transform="translate(1886.04,1937.1701)">
-            <g
-               event="remove"
-               id="g556">
-              <circle
-                 r="11"
-                 id="circle550"
-                 cx="0"
-                 cy="0" />
-              <path
-                 transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
-                 d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
-                 id="path552" />
-              <title
-                 id="title554">Remove link.</title>
-            </g>
-            <g
-               event="link:options"
-               id="g564">
-              <circle
-                 r="11"
-                 transform="translate(25)"
-                 id="circle558"
-                 cx="0"
-                 cy="0" />
-              <path
-                 fill="#ffffff"
-                 transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
-                 d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
-                 id="path560" />
-              <title
-                 id="title562">Link options.</title>
-            </g>
-          </g>
-        </g>
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
       </g>
     </g>
     <g
-       id="g571" />
+       display="none"
+       id="g67" />
     <g
-       id="g573" />
+       id="v-2470"
+       display="none">
+      <g
+         id="v-2458">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path67" />
+      </g>
+      <g
+         id="v-2459">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path68" />
+      </g>
+    </g>
     <g
-       id="g575" />
+       id="v-2469"
+       display="none">
+      <g
+         id="v-2457"
+         transform="translate(729.93999,1643.1903)">
+        <g
+           event="remove"
+           id="g69">
+          <circle
+             r="11"
+             id="circle68"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path69" />
+          <title
+             id="title69">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g70">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle69"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path70" />
+          <title
+             id="title70">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_186"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 680,919 315,94"
+       id="v-2480"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(16.557297,-2819.577,2796.441)"
+       id="path71" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2482"
+       transform="rotate(-163.4427,570.4781,439.16693)"
+       style="opacity:1" />
+    <path
+       d="m 680,919 315,94"
+       id="v-2481"
+       fill="none" />
+    <g
+       id="g71">
+      <g
+         id="v-2474"
+         label-idx="0"
+         cursor="move"
+         transform="translate(837.5,966)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2477"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="100.93661"
+           height="33.985939"
+           transform="translate(-50.5,-16.9)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2476"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-10)"><tspan
+             dy="0"
+             id="tspan71">Manages</tspan></text>
+      </g>
+      <g
+         id="v-2475"
+         label-idx="1"
+         cursor="move"
+         transform="translate(827.5,992.40002)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2479"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2478"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g72" />
+    <g
+       id="v-2484"
+       display="none">
+      <g
+         id="v-2472">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path72" />
+      </g>
+      <g
+         id="v-2473">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path73" />
+      </g>
+    </g>
+    <g
+       id="v-2483"
+       display="none">
+      <g
+         id="v-2471"
+         transform="translate(718.32976,930.43809)">
+        <g
+           event="remove"
+           id="g74">
+          <circle
+             r="11"
+             id="circle73"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path74" />
+          <title
+             id="title74">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g75">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle74"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path75" />
+          <title
+             id="title75">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_187"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="M 680,775 970,651"
+       id="v-2494"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(-23.102417,2235.1898,-1276.1966)"
+       id="path76" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2496"
+       transform="rotate(156.89757,419.49717,429.61592)"
+       style="opacity:1" />
+    <path
+       d="M 680,775 970,651"
+       id="v-2495"
+       fill="none" />
+    <g
+       id="g76">
+      <g
+         id="v-2488"
+         label-idx="0"
+         cursor="move"
+         transform="translate(825,713)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2491"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="53.879154"
+           height="33.985939"
+           transform="translate(-26.9,-16.9)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2490"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-10)"><tspan
+             dy="0"
+             id="tspan76">Uses</tspan></text>
+      </g>
+      <g
+         id="v-2489"
+         label-idx="1"
+         cursor="move"
+         transform="translate(815,739.40002)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2493"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2492"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g77" />
+    <g
+       id="v-2498"
+       display="none">
+      <g
+         id="v-2486">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path77" />
+      </g>
+      <g
+         id="v-2487">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path78" />
+      </g>
+    </g>
+    <g
+       id="v-2497"
+       display="none">
+      <g
+         id="v-2485"
+         transform="translate(716.77891,759.27385)">
+        <g
+           event="remove"
+           id="g79">
+          <circle
+             r="11"
+             id="circle78"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path79" />
+          <title
+             id="title79">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g80">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle79"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path80" />
+          <title
+             id="title80">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_188"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 1450,1673 280,4"
+       id="v-2511"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(0.78572142,-121276.15,106570.68)"
+       id="path81" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2513"
+       transform="rotate(-179.21428,870.7149,837.52884)"
+       style="opacity:1" />
+    <path
+       d="m 1450,1673 280,4"
+       id="v-2512"
+       fill="none" />
+    <g
+       id="g82">
+      <g
+         id="v-2505"
+         label-idx="0"
+         cursor="move"
+         transform="translate(1590,1675)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2508"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="152.28316"
+           height="62.785942"
+           transform="translate(-76.1,-31.3)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2507"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-24.4)"><tspan
+             dy="0"
+             id="tspan81">Interacts with</tspan><tspan
+             dy="1.2em"
+             x="0"
+             id="tspan82">HTTP API</tspan></text>
+      </g>
+      <g
+         id="v-2506"
+         label-idx="1"
+         cursor="move"
+         transform="translate(1580,1715.8)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2510"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2509"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g83" />
+    <g
+       id="v-2515"
+       display="none">
+      <g
+         id="v-2503">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path83" />
+      </g>
+      <g
+         id="v-2504">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path84" />
+      </g>
+    </g>
+    <g
+       id="v-2514"
+       display="none">
+      <g
+         id="v-2502"
+         transform="translate(1489.9959,1673.5714)">
+        <g
+           event="remove"
+           id="g85">
+          <circle
+             r="11"
+             id="circle84"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path85" />
+          <title
+             id="title85">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g86">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle85"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path86" />
+          <title
+             id="title86">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_189"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 1956,1530 3,-305"
+       id="v-2528"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(-89.526611,1749.4668,-221.23498)"
+       id="path87" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2530"
+       transform="rotate(90.473381,376.87859,1588.8215)"
+       style="opacity:1" />
+    <path
+       d="m 1956,1530 3,-305"
+       id="v-2529"
+       fill="none" />
+    <g
+       id="g88">
+      <g
+         id="v-2522"
+         label-idx="0"
+         cursor="move"
+         transform="translate(1957.5,1377.5)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2525"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="177.52753"
+           height="62.785942"
+           transform="translate(-88.8,-31.3)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2524"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-24.4)"><tspan
+             dy="0"
+             id="tspan87">Reads from and</tspan><tspan
+             dy="1.2em"
+             x="0"
+             id="tspan88">writes to</tspan></text>
+      </g>
+      <g
+         id="v-2523"
+         label-idx="1"
+         cursor="move"
+         transform="translate(1947.5,1418.3)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2527"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2526"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g89" />
+    <g
+       id="v-2532"
+       display="none">
+      <g
+         id="v-2520">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path89" />
+      </g>
+      <g
+         id="v-2521">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path90" />
+      </g>
+    </g>
+    <g
+       id="v-2531"
+       display="none">
+      <g
+         id="v-2519"
+         transform="translate(1956.3934,1490.0019)">
+        <g
+           event="remove"
+           id="g91">
+          <circle
+             r="11"
+             id="circle90"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path91" />
+          <title
+             id="title91">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g92">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle91"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path92" />
+          <title
+             id="title92">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_190"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 2180,1680 278,-1"
+       id="v-2545"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(-0.07830811,1230070.4,-1594203)"
+       id="path93" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2547"
+       transform="rotate(179.92168,1228.4295,845.49499)"
+       style="opacity:1" />
+    <path
+       d="m 2180,1680 278,-1"
+       id="v-2546"
+       fill="none" />
+    <g
+       id="g94">
+      <g
+         id="v-2539"
+         label-idx="0"
+         cursor="move"
+         transform="translate(2319,1679.5)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2542"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="184.63516"
+           height="62.785942"
+           transform="translate(-92.3,-31.3)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2541"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-24.4)"><tspan
+             dy="0"
+             id="tspan93">Consumes and</tspan><tspan
+             dy="1.2em"
+             x="0"
+             id="tspan94">produces events</tspan></text>
+      </g>
+      <g
+         id="v-2540"
+         label-idx="1"
+         cursor="move"
+         transform="translate(2309,1720.3)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2544"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2543"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g95" />
+    <g
+       id="v-2549"
+       display="none">
+      <g
+         id="v-2537">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path95" />
+      </g>
+      <g
+         id="v-2538">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path96" />
+      </g>
+    </g>
+    <g
+       id="v-2548"
+       display="none">
+      <g
+         id="v-2536"
+         transform="translate(2219.9997,1679.8561)">
+        <g
+           event="remove"
+           id="g97">
+          <circle
+             r="11"
+             id="circle96"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path97" />
+          <title
+             id="title97">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g98">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle97"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path98" />
+          <title
+             id="title98">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_191"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 1957,1830 1,180"
+       id="v-2559"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(89.401596,53.673407,1903.551)"
+       id="path99" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2561"
+       transform="rotate(-90.598389,1968.8303,40.953762)"
+       style="opacity:1" />
+    <path
+       d="m 1957,1830 1,180"
+       id="v-2560"
+       fill="none" />
+    <g
+       id="g99">
+      <g
+         id="v-2553"
+         label-idx="0"
+         cursor="move"
+         transform="translate(1957.5,1920)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2556"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="127.93746"
+           height="33.985939"
+           transform="translate(-64,-16.9)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2555"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-10)"><tspan
+             dy="0"
+             id="tspan99">Invokes API</tspan></text>
+      </g>
+      <g
+         id="v-2554"
+         label-idx="1"
+         cursor="move"
+         transform="translate(1947.5,1946.4)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2558"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2557"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g100" />
+    <g
+       id="v-2563"
+       display="none">
+      <g
+         id="v-2551">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path100" />
+      </g>
+      <g
+         id="v-2552">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path101" />
+      </g>
+    </g>
+    <g
+       id="v-2562"
+       display="none">
+      <g
+         id="v-2550"
+         transform="translate(1957.2222,1869.9994)">
+        <g
+           event="remove"
+           id="g102">
+          <circle
+             r="11"
+             id="circle101"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path102" />
+          <title
+             id="title102">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g103">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle102"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path103" />
+          <title
+             id="title103">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_192"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="M 2462,925 2163,715"
+       id="v-2576"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(-144.87474,1377.2617,72.925289)"
+       id="path104" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2578"
+       transform="rotate(35.125256,-32.120819,3779.9307)"
+       style="opacity:1" />
+    <path
+       d="M 2462,925 2163,715"
+       id="v-2577"
+       fill="none" />
+    <g
+       id="g105">
+      <g
+         id="v-2570"
+         label-idx="0"
+         cursor="move"
+         transform="translate(2312.5,820)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2573"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="177.52753"
+           height="62.785942"
+           transform="translate(-88.8,-31.3)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2572"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-24.4)"><tspan
+             dy="0"
+             id="tspan104">Reads from and</tspan><tspan
+             dy="1.2em"
+             x="0"
+             id="tspan105">writes to</tspan></text>
+      </g>
+      <g
+         id="v-2571"
+         label-idx="1"
+         cursor="move"
+         transform="translate(2302.5,860.79999)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2575"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2574"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g106" />
+    <g
+       id="v-2580"
+       display="none">
+      <g
+         id="v-2568">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path106" />
+      </g>
+      <g
+         id="v-2569">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path107" />
+      </g>
+    </g>
+    <g
+       id="v-2579"
+       display="none">
+      <g
+         id="v-2567"
+         transform="translate(2429.2668,902.0101)">
+        <g
+           event="remove"
+           id="g108">
+          <circle
+             r="11"
+             id="circle107"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path108" />
+          <title
+             id="title108">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g109">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle108"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path109" />
+          <title
+             id="title109">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_193"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 2677,1225 4,304"
+       id="v-2593"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(89.242386,717.84197,1968.8118)"
+       id="path110" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2595"
+       transform="rotate(-90.757629,2090.0278,-553.39547)"
+       style="opacity:1" />
+    <path
+       d="m 2677,1225 4,304"
+       id="v-2594"
+       fill="none" />
+    <g
+       id="g111">
+      <g
+         id="v-2587"
+         label-idx="0"
+         cursor="move"
+         transform="translate(2679,1377)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2590"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="184.63516"
+           height="62.785942"
+           transform="translate(-92.3,-31.3)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2589"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-24.4)"><tspan
+             dy="0"
+             id="tspan110">Consumes and</tspan><tspan
+             dy="1.2em"
+             x="0"
+             id="tspan111">produces events</tspan></text>
+      </g>
+      <g
+         id="v-2588"
+         label-idx="1"
+         cursor="move"
+         transform="translate(2669,1417.8)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2592"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2591"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g112" />
+    <g
+       id="v-2597"
+       display="none">
+      <g
+         id="v-2585">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path112" />
+      </g>
+      <g
+         id="v-2586">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path113" />
+      </g>
+    </g>
+    <g
+       id="v-2596"
+       display="none">
+      <g
+         id="v-2584"
+         transform="translate(2677.5263,1264.9965)">
+        <g
+           event="remove"
+           id="g114">
+          <circle
+             r="11"
+             id="circle113"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path114" />
+          <title
+             id="title114">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g115">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle114"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path115" />
+          <title
+             id="title115">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_194"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 1220,1230 v 190 c 0,6.6667 3.3333,10 10,10 h 625 c 6.6667,0 13.3333,1 20,3 l 583,178"
+       id="v-2609"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(90,-5,1225)"
+       id="path116" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2611"
+       transform="rotate(-163.06969,1348.1014,627.34373)"
+       style="opacity:1" />
+    <path
+       d="m 1220,1230 v 190 c 0,6.6667 3.3333,10 10,10 h 625 c 6.6667,0 13.3333,1 20,3 l 583,178"
+       id="v-2610"
+       fill="none" />
+    <g
+       id="g116">
+      <g
+         id="v-2603"
+         label-idx="0"
+         cursor="move"
+         transform="translate(1754.3145,1430)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2606"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="100.93661"
+           height="33.985939"
+           transform="translate(-50.5,-16.9)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2605"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-10)"><tspan
+             dy="0"
+             id="tspan116">Manages</tspan></text>
+      </g>
+      <g
+         id="v-2604"
+         label-idx="1"
+         cursor="move"
+         transform="translate(1744.3145,1456.4)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2608"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2607"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g120">
+      <g
+         transform="translate(1220,1430)"
+         id="v-2599">
+        <circle
+           idx="0"
+           r="10"
+           id="circle116"
+           cx="0"
+           cy="0" />
+        <path
+           idx="0"
+           d="m 16,5.333 c -7.732,0 -14,4.701 -14,10.5 0,1.982 0.741,3.833 2.016,5.414 L 2,25.667 7.613,24.226 c 2.339,1.317 5.237,2.107 8.387,2.107 7.732,0 14,-4.701 14,-10.5 0,-5.799 -6.268,-10.5 -14,-10.5 z"
+           transform="translate(5,-33)"
+           id="path117" />
+        <path
+           idx="0"
+           transform="matrix(0.8,0,0,0.8,7.6,-29.6)"
+           d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+           id="path118">
+          <title
+             id="title117">Remove vertex.</title>
+        </path>
+      </g>
+      <g
+         transform="translate(1865,1430)"
+         id="v-2600">
+        <circle
+           idx="1"
+           r="10"
+           id="circle118"
+           cx="0"
+           cy="0" />
+        <path
+           idx="1"
+           d="m 16,5.333 c -7.732,0 -14,4.701 -14,10.5 0,1.982 0.741,3.833 2.016,5.414 L 2,25.667 7.613,24.226 c 2.339,1.317 5.237,2.107 8.387,2.107 7.732,0 14,-4.701 14,-10.5 0,-5.799 -6.268,-10.5 -14,-10.5 z"
+           transform="translate(5,-33)"
+           id="path119" />
+        <path
+           idx="1"
+           transform="matrix(0.8,0,0,0.8,7.6,-29.6)"
+           d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+           id="path120">
+          <title
+             id="title119">Remove vertex.</title>
+        </path>
+      </g>
+    </g>
+    <g
+       id="v-2613"
+       display="none">
+      <g
+         id="v-2601">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path121" />
+      </g>
+      <g
+         id="v-2602">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path122" />
+      </g>
+    </g>
+    <g
+       id="v-2612"
+       display="none">
+      <g
+         id="v-2598"
+         transform="translate(1220,1270)">
+        <g
+           event="remove"
+           id="g123">
+          <circle
+             r="11"
+             id="circle122"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path123" />
+          <title
+             id="title123">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g124">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle123"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path124" />
+          <title
+             id="title124">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_195"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 1416,705 323,220"
+       id="v-2623"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(34.204952,-437.80796,2652.9999)"
+       id="path125" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2625"
+       transform="rotate(-145.79504,1010.432,199.91495)"
+       style="opacity:1" />
+    <path
+       d="m 1416,705 323,220"
+       id="v-2624"
+       fill="none" />
+    <g
+       id="g125">
+      <g
+         id="v-2617"
+         label-idx="0"
+         cursor="move"
+         transform="translate(1577.5,815)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2620"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="100.93661"
+           height="33.985939"
+           transform="translate(-50.5,-16.9)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2619"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-10)"><tspan
+             dy="0"
+             id="tspan125">Manages</tspan></text>
+      </g>
+      <g
+         id="v-2618"
+         label-idx="1"
+         cursor="move"
+         transform="translate(1567.5,841.40002)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2622"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2621"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g126" />
+    <g
+       id="v-2627"
+       display="none">
+      <g
+         id="v-2615">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path126" />
+      </g>
+      <g
+         id="v-2616">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path127" />
+      </g>
+    </g>
+    <g
+       id="v-2626"
+       display="none">
+      <g
+         id="v-2614"
+         transform="translate(1449.0599,727.51759)">
+        <g
+           event="remove"
+           id="g128">
+          <circle
+             r="11"
+             id="circle127"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path128" />
+          <title
+             id="title128">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g129">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle128"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path129" />
+          <title
+             id="title129">Link options.</title>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     id="j_196"
+     transform="translate(-279,-384.5)">
+    <path
+       stroke="#707070"
+       d="m 1420,558 305,4"
+       id="v-2637"
+       stroke-width="2"
+       stroke-dasharray="30, 30"
+       fill="none"
+       style="opacity:1" />
+    <path
+       fill="#000000"
+       stroke="#000000"
+       d="M 0,0 V 0"
+       transform="rotate(0.75888985,-41416.575,107486.67)"
+       id="path130" />
+    <path
+       fill="#707070"
+       stroke="#707070"
+       d="M 20,0 0,10 20,20 Z"
+       id="v-2639"
+       transform="rotate(-179.2411,864.32792,280.29792)"
+       style="opacity:1" />
+    <path
+       d="m 1420,558 305,4"
+       id="v-2638"
+       fill="none" />
+    <g
+       id="g130">
+      <g
+         id="v-2631"
+         label-idx="0"
+         cursor="move"
+         transform="translate(1572.5,560)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2634"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           pointer-events="none"
+           width="100.93661"
+           height="33.985939"
+           transform="translate(-50.5,-16.9)"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2633"
+           font-size="24px"
+           xml:space="preserve"
+           y="0.80000001em"
+           fill="#707070"
+           text-anchor="middle"
+           pointer-events="none"
+           font-family="'Open Sans'"
+           font-weight="normal"
+           transform="translate(0,-10)"><tspan
+             dy="0"
+             id="tspan130">Manages</tspan></text>
+      </g>
+      <g
+         id="v-2632"
+         label-idx="1"
+         cursor="move"
+         transform="translate(1562.5,586.40002)"
+         style="opacity:1">
+        <rect
+           joint-selector="rect"
+           id="v-2636"
+           fill="#ffffff"
+           rx="3"
+           ry="3"
+           width="0"
+           height="0"
+           display="none"
+           x="0"
+           y="0" />
+        <text
+           joint-selector="text"
+           id="v-2635"
+           fill="#000000"
+           font-size="14px"
+           text-anchor="middle"
+           pointer-events="none" />
+      </g>
+    </g>
+    <g
+       display="none"
+       id="g131" />
+    <g
+       id="v-2641"
+       display="none">
+      <g
+         id="v-2629">
+        <path
+           end="source"
+           d="M 26,0 0,13 26,26 Z"
+           id="path131" />
+      </g>
+      <g
+         id="v-2630">
+        <path
+           end="target"
+           d="M 26,0 0,13 26,26 Z"
+           id="path132" />
+      </g>
+    </g>
+    <g
+       id="v-2640"
+       display="none">
+      <g
+         id="v-2628"
+         transform="translate(1459.9966,558.52455)">
+        <g
+           event="remove"
+           id="g133">
+          <circle
+             r="11"
+             id="circle132"
+             cx="0"
+             cy="0" />
+          <path
+             transform="matrix(0.8,0,0,0.8,-12.8,-12.8)"
+             d="m 24.778,21.419 -5.502,-5.502 5.501,-5.502 -2.828,-2.83 -5.502,5.502 -5.502,-5.502 -2.828,2.83 5.501,5.502 -5.502,5.502 2.83,2.829 5.501,-5.502 5.501,5.502 z"
+             id="path133" />
+          <title
+             id="title133">Remove link.</title>
+        </g>
+        <g
+           event="link:options"
+           id="g134">
+          <circle
+             r="11"
+             transform="translate(25)"
+             id="circle133"
+             cx="0"
+             cy="0" />
+          <path
+             fill="#ffffff"
+             transform="matrix(0.55,0,0,0.55,15.95,-8.8)"
+             d="m 31.229,17.736 c 0.064,-0.571 0.104,-1.148 0.104,-1.736 0,-0.588 -0.04,-1.166 -0.104,-1.737 L 26.852,12.706 C 26.634,11.99 26.348,11.305 26.001,10.656 L 27.994,6.464 C 27.269,5.554 26.445,4.73 25.536,4.005 L 21.343,5.999 C 20.696,5.652 20.009,5.367 19.294,5.15 L 17.736,0.772 C 17.165,0.708 16.588,0.667 16,0.667 c -0.588,0 -1.166,0.041 -1.737,0.105 L 12.707,5.15 c -0.716,0.217 -1.401,0.502 -2.05,0.849 L 6.464,4.005 C 5.554,4.73 4.73,5.554 4.005,6.464 l 1.994,4.192 C 5.652,11.304 5.367,11.99 5.15,12.706 L 0.772,14.263 C 0.708,14.834 0.667,15.412 0.667,16 c 0,0.588 0.041,1.165 0.105,1.736 l 4.378,1.558 c 0.217,0.715 0.502,1.401 0.849,2.049 l -1.994,4.193 c 0.725,0.909 1.549,1.733 2.459,2.458 l 4.192,-1.993 c 0.648,0.347 1.334,0.633 2.05,0.851 l 1.557,4.377 c 0.571,0.064 1.148,0.104 1.737,0.104 0.588,0 1.165,-0.04 1.736,-0.104 l 1.558,-4.377 c 0.715,-0.218 1.399,-0.504 2.049,-0.851 l 4.193,1.993 c 0.909,-0.725 1.733,-1.549 2.458,-2.458 l -1.993,-4.193 c 0.347,-0.647 0.633,-1.334 0.851,-2.049 z M 16,20.871 c -2.69,0 -4.872,-2.182 -4.872,-4.871 0,-2.69 2.182,-4.872 4.872,-4.872 2.689,0 4.871,2.182 4.871,4.872 0,2.689 -2.182,4.871 -4.871,4.871 z"
+             id="path134" />
+          <title
+             id="title134">Link options.</title>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
