@@ -1,0 +1,810 @@
+openapi: 3.0.1
+info:
+  title: todo-microservice
+  version: 1.0.0
+paths:
+  /items:
+    get:
+      tags:
+      - items
+      operationId: list
+      parameters:
+      - name: page
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        "200":
+          description: list 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Page_ToDoItem_"
+  /items/{id}:
+    get:
+      tags:
+      - items
+      operationId: get
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: get 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ToDoItem"
+    put:
+      tags:
+      - items
+      operationId: update
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListItemUpdateDTO"
+        required: true
+      responses:
+        "200":
+          description: update 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+    delete:
+      tags:
+      - items
+      operationId: delete
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: delete 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /items/{id}/users:
+    get:
+      tags:
+      - items
+      operationId: getUsers
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: page
+        in: query
+        required: true
+        schema:
+          minimum: 0
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        "200":
+          description: getUsers 200 response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+  /items/{id}/users/{userId}:
+    put:
+      tags:
+      - items
+      operationId: assignUser
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: assignUser 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+    delete:
+      tags:
+      - items
+      operationId: unassignUser
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: userId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: unassignUser 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /lists:
+    get:
+      tags:
+      - lists
+      operationId: list_1
+      parameters:
+      - name: page
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        "200":
+          description: list_1 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Page_ToDoList_"
+    post:
+      tags:
+      - lists
+      operationId: create
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+        required: true
+      responses:
+        "200":
+          description: create 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /lists/byName/{name}:
+    get:
+      tags:
+      - lists
+      operationId: find
+      parameters:
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: find 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ToDoList"
+    delete:
+      tags:
+      - lists
+      operationId: delete_1
+      parameters:
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: delete_1 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /lists/byName/{name}/items:
+    get:
+      tags:
+      - lists
+      operationId: items
+      parameters:
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: page
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        "200":
+          description: items 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Page_ListItemDTO_"
+    post:
+      tags:
+      - lists
+      operationId: addItem
+      parameters:
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListItemCreateDTO"
+        required: true
+      responses:
+        "200":
+          description: addItem 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /lists/byName/{oldName}:
+    put:
+      tags:
+      - lists
+      operationId: update_1
+      parameters:
+      - name: oldName
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+        required: true
+      responses:
+        "200":
+          description: update_1 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /lists/{id}:
+    get:
+      tags:
+      - lists
+      operationId: find_1
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: find_1 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ToDoList"
+    put:
+      tags:
+      - lists
+      operationId: update_2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+        required: true
+      responses:
+        "200":
+          description: update_2 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+    delete:
+      tags:
+      - lists
+      operationId: delete_2
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: delete_2 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /lists/{id}/items:
+    get:
+      tags:
+      - lists
+      operationId: items_1
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: page
+        in: query
+        required: true
+        schema:
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        "200":
+          description: items_1 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Page_ListItemDTO_"
+    post:
+      tags:
+      - lists
+      operationId: addItem_1
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ListItemCreateDTO"
+        required: true
+      responses:
+        "200":
+          description: addItem_1 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /users:
+    get:
+      tags:
+      - users
+      operationId: list_2
+      parameters:
+      - name: page
+        in: query
+        required: true
+        schema:
+          minimum: 0
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        "200":
+          description: list_2 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Page_User_"
+    post:
+      tags:
+      - users
+      operationId: create_1
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+        required: true
+      responses:
+        "200":
+          description: create_1 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /users/{id}:
+    get:
+      tags:
+      - users
+      operationId: findById
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: findById 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+    delete:
+      tags:
+      - users
+      operationId: delete_3
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: delete_3 200 response
+          content:
+            text/plain:
+              schema:
+                type: string
+  /users/{id}/items:
+    get:
+      tags:
+      - users
+      operationId: listItems
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: page
+        in: query
+        required: true
+        schema:
+          minimum: 0
+          type: integer
+          format: int32
+          default: 0
+      responses:
+        "200":
+          description: listItems 200 response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Page_ToDoItem_"
+components:
+  schemas:
+    ListItemCreateDTO:
+      required:
+      - body
+      - timestamp
+      - title
+      type: object
+      properties:
+        title:
+          type: string
+        body:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+    ListItemDTO:
+      required:
+      - body
+      - id
+      - timestamp
+      - title
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        timestamp:
+          type: string
+          format: date-time
+        title:
+          type: string
+        body:
+          type: string
+    ListItemUpdateDTO:
+      required:
+      - body
+      - listId
+      - timestamp
+      - title
+      type: object
+      properties:
+        listId:
+          type: integer
+          format: int64
+        title:
+          type: string
+        body:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+    Page_ListItemDTO_:
+      type: object
+      allOf:
+      - $ref: "#/components/schemas/Slice_ListItemDTO_"
+      - properties:
+          totalSize:
+            type: integer
+            format: int64
+          totalPages:
+            type: integer
+            format: int32
+    Page_ToDoItem_:
+      type: object
+      allOf:
+      - $ref: "#/components/schemas/Slice_ToDoItem_"
+      - properties:
+          totalSize:
+            type: integer
+            format: int64
+          totalPages:
+            type: integer
+            format: int32
+    Page_ToDoList_:
+      type: object
+      allOf:
+      - $ref: "#/components/schemas/Slice_ToDoList_"
+      - properties:
+          totalSize:
+            type: integer
+            format: int64
+          totalPages:
+            type: integer
+            format: int32
+    Page_User_:
+      type: object
+      allOf:
+      - $ref: "#/components/schemas/Slice_User_"
+      - properties:
+          totalSize:
+            type: integer
+            format: int64
+          totalPages:
+            type: integer
+            format: int32
+    Pageable:
+      required:
+      - size
+      - sort
+      type: object
+      allOf:
+      - $ref: "#/components/schemas/Sort"
+      - properties:
+          number:
+            type: integer
+            format: int32
+          size:
+            type: integer
+            format: int32
+          mode:
+            $ref: "#/components/schemas/Pageable.Mode"
+          sort:
+            $ref: "#/components/schemas/Sort"
+    Pageable.Mode:
+      type: string
+      enum:
+      - CURSOR_NEXT
+      - CURSOR_PREVIOUS
+      - OFFSET
+    Slice_ListItemDTO_:
+      required:
+      - content
+      - pageable
+      type: object
+      properties:
+        content:
+          type: array
+          items:
+            $ref: "#/components/schemas/ListItemDTO"
+        pageable:
+          $ref: "#/components/schemas/Pageable"
+        pageNumber:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int64
+        size:
+          type: integer
+          format: int32
+        empty:
+          type: boolean
+        numberOfElements:
+          type: integer
+          format: int32
+    Slice_ToDoItem_:
+      required:
+      - content
+      - pageable
+      type: object
+      properties:
+        content:
+          type: array
+          items:
+            $ref: "#/components/schemas/ToDoItem"
+        pageable:
+          $ref: "#/components/schemas/Pageable"
+        pageNumber:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int64
+        size:
+          type: integer
+          format: int32
+        empty:
+          type: boolean
+        numberOfElements:
+          type: integer
+          format: int32
+    Slice_ToDoList_:
+      required:
+      - content
+      - pageable
+      type: object
+      properties:
+        content:
+          type: array
+          items:
+            $ref: "#/components/schemas/ToDoList"
+        pageable:
+          $ref: "#/components/schemas/Pageable"
+        pageNumber:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int64
+        size:
+          type: integer
+          format: int32
+        empty:
+          type: boolean
+        numberOfElements:
+          type: integer
+          format: int32
+    Slice_User_:
+      required:
+      - content
+      - pageable
+      type: object
+      properties:
+        content:
+          type: array
+          items:
+            $ref: "#/components/schemas/User"
+        pageable:
+          $ref: "#/components/schemas/Pageable"
+        pageNumber:
+          type: integer
+          format: int32
+        offset:
+          type: integer
+          format: int64
+        size:
+          type: integer
+          format: int32
+        empty:
+          type: boolean
+        numberOfElements:
+          type: integer
+          format: int32
+    Sort:
+      required:
+      - orderBy
+      type: object
+      properties:
+        orderBy:
+          type: array
+          items:
+            $ref: "#/components/schemas/Sort.Order"
+    Sort.Order:
+      required:
+      - direction
+      - ignoreCase
+      - property
+      type: object
+      properties:
+        ignoreCase:
+          type: boolean
+        direction:
+          $ref: "#/components/schemas/Sort.Order.Direction"
+        property:
+          type: string
+        ascending:
+          type: boolean
+    Sort.Order.Direction:
+      type: string
+      enum:
+      - ASC
+      - DESC
+    ToDoItem:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          nullable: true
+        list:
+          nullable: true
+          allOf:
+          - $ref: "#/components/schemas/ToDoList"
+        timestamp:
+          type: string
+          format: date-time
+        title:
+          type: string
+        body:
+          type: string
+    ToDoList:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          nullable: true
+        name:
+          type: string
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          nullable: true
+        username:
+          type: string

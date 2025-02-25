@@ -1,0 +1,25 @@
+openapi: 3.0.1
+info:
+  title: edit-count-consumers
+  version: 1.0.0
+paths:
+  /editcounts/{listId}:
+    get:
+      tags:
+      - counts
+      operationId: getCount
+      parameters:
+      - name: listId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      responses:
+        "200":
+          description: getCount 200 response
+          content:
+            application/json:
+              schema:
+                type: integer
+                format: int64

@@ -1,40 +1,29 @@
 plugins {
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("io.micronaut.application") version "4.4.4"
-    id("io.micronaut.test-resources") version "4.4.4"
     id("io.micronaut.aot") version "4.4.4"
+    id('io.micronaut.openapi') version "4.4.4"
 }
 
 version = "0.1"
-group = "todo.microservice.edits"
+group = "uk.ac.york.cs.eng2.todo.e2e"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
-    annotationProcessor("io.micronaut.openapi:micronaut-openapi")
-
-    implementation("io.micronaut.data:micronaut-data-hibernate-jpa")
-    implementation("io.micronaut.flyway:micronaut-flyway")
-    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
-    implementation("io.micronaut.kafka:micronaut-kafka")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
-    compileOnly("io.micronaut.openapi:micronaut-openapi-annotations")
-
-    // For the rekeying test
-    testImplementation("org.mockito:mockito-core:5.15.2")
-
-    runtimeOnly("org.flywaydb:flyway-mysql")
+    compileOnly("io.micronaut:micronaut-http-client")
     runtimeOnly("ch.qos.logback:logback-classic")
-    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
+    testImplementation("io.micronaut:micronaut-http-client")
 }
 
 
 application {
-    mainClass = "todo.microservice.edits.Application"
+    mainClass = "uk.ac.york.cs.eng2.todo.e2e.Application"
 }
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
@@ -49,10 +38,7 @@ micronaut {
     testRuntime("junit5")
     processing {
         incremental(true)
-        annotations("todo.microservice.edits.*")
-    }
-    testResources {
-        sharedServer = true
+        annotations("uk.ac.york.cs.eng2.todo.e2e.*")
     }
     aot {
         // Please review carefully the optimizations enabled below
@@ -65,6 +51,20 @@ micronaut {
         deduceEnvironment = true
         optimizeNetty = true
         replaceLogbackXml = true
+    }
+    openapi {
+        client("todo", file("src/openapi/todo-microservice-1.0.0.yml")) {
+            apiPackageName = "uk.ac.york.eng2.todo.api"
+            clientId = "todo"
+            modelPackageName = "uk.ac.york.eng2.todo.model"
+            alwaysUseGenerateHttpResponse = true
+        }
+        client("editcounts", file("src/openapi/edit-count-consumers-1.0.0.yml")) {
+            apiPackageName = "uk.ac.york.eng2.edits.api"
+            clientId = "editcounts"
+            modelPackageName = "uk.ac.york.eng2.edits.model"
+            alwaysUseGenerateHttpResponse = true
+        }
     }
 }
 
