@@ -6,18 +6,13 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import uk.ac.york.eng2.edits.api.CountsApi;
-import uk.ac.york.eng2.todo.api.ItemsApi;
 import uk.ac.york.eng2.todo.api.ListsApi;
 import uk.ac.york.eng2.todo.model.ListItemCreateDTO;
-import uk.ac.york.eng2.todo.model.ToDoList;
 
 import java.time.Duration;
-import java.time.Instant;
 import java.time.ZonedDateTime;
 import java.util.Optional;
 import java.util.concurrent.Callable;
@@ -39,7 +34,7 @@ public class EndToEndTest {
   private CountsApi countsApi;
 
   @Test
-  public void createListIncrementsEditCount() {
+  public void addItemIncrementsCount() {
     // Create a list
     HttpResponse<@NotNull String> listCreateResponse = listsApi.create("shopping");
     assertEquals(HttpStatus.CREATED, listCreateResponse.getStatus());
@@ -54,7 +49,7 @@ public class EndToEndTest {
 
   protected Callable<Boolean> editCountBecomes(long listId, int expectedCount) {
     return () -> {
-      @NonNull Optional<@NotNull Long> oCount = countsApi.getCount(listId).getBody();
+      var oCount = countsApi.getCount(listId).getBody();
       if (oCount.isPresent()) {
         return oCount.get() == expectedCount;
       }
