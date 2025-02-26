@@ -19,6 +19,7 @@ dependencies {
     compileOnly("io.micronaut:micronaut-http-client")
     runtimeOnly("ch.qos.logback:logback-classic")
     testImplementation("io.micronaut:micronaut-http-client")
+    testImplementation("org.awaitility:awaitility:4.3.0")
 }
 
 
@@ -58,12 +59,14 @@ micronaut {
             clientId = "todo"
             modelPackageName = "uk.ac.york.eng2.todo.model"
             alwaysUseGenerateHttpResponse = true
+            useReactive = false
         }
         client("editcounts", file("src/openapi/edit-count-consumers-1.0.0.yml")) {
             apiPackageName = "uk.ac.york.eng2.edits.api"
             clientId = "editcounts"
             modelPackageName = "uk.ac.york.eng2.edits.model"
             alwaysUseGenerateHttpResponse = true
+            useReactive = false
         }
     }
 }
