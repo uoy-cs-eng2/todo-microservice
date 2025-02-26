@@ -25,6 +25,10 @@ import java.util.concurrent.Callable;
 import static org.awaitility.Awaitility.await;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Example end-to-end test. Requires starting the application from a clean slate (nothing
+ * in the DB).
+ */
 @MicronautTest
 public class EndToEndTest {
 
