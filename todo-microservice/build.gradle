@@ -74,7 +74,3 @@ micronaut {
         replaceLogbackXml = true
     }
 }
-
-tasks.named("dockerfile") {
-  baseImage = "eclipse-temurin:17-focal"
-}
