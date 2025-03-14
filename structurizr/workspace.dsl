@@ -2,13 +2,13 @@
  * C4 model at the system and container levels for the To-Do Microservice,
  * using the Structurizr DSL from here:
  *
- *   https://docs.structurizr.com/dsl/
+ *   https://docs.structurizr.com/dsl
  *
  * The Compose file in this repository includes a container that runs the
  * Structurizr Lite web application. Use "./compose-it.sh up -d" to bring
  * up the application, and open this webpage:
  *
- *   http://localhost:8081/
+ *   http://localhost:9002/
  */
 workspace "To-Do" "Example to-do list system" {
 
