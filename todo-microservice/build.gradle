@@ -37,6 +37,11 @@ dependencies {
 
     testImplementation("io.micronaut:micronaut-http-client")
     testImplementation("org.mockito:mockito-core:5.15.2")
+
+    // Try control-panel
+    developmentOnly("io.micronaut.controlpanel:micronaut-control-panel-ui")
+    developmentOnly("io.micronaut.controlpanel:micronaut-control-panel-management")
+    runtimeOnly("io.micronaut:micronaut-management")
 }
 
 
