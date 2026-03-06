@@ -33,6 +33,8 @@ ToDoList *-- "*" ToDoItem: contains
 ToDoItem "*" -- "*" User: users
 ```
 
+There is an additional microservice that consumes Kafka events produced by the main microservice to keep ongoing counts of edits for each list.
+
 ## C4 container model
 
 The system can be described through the following [C4 container model](https://c4model.com/):
@@ -45,6 +47,10 @@ The microservice has RESTful endpoints for both lists and items.
 For a list of the endpoints, start the application by running the Gradle `run` task and visit:
 
 http://localhost:8080/swagger-ui
+
+The edit counts microservice can be started similarly, and its endpoints will be similarly available from:
+
+http://localhost:8081/swagger-ui
 
 ## Integration testing with Docker Compose
 
@@ -63,6 +69,23 @@ cd ..
 ```
 
 This will build a Java-based Docker image of the microservice and a [sample application with several Kafka consumers](./edit-count-consumers), and then start it together with its dependencies and some web-based UIs to help debugging.
+
+The microservices will be behind an [nginx](https://nginx.org/) reverse proxy, acting as a simple example of what an "API layer" would do in a microservices architecture:
+
+- To-do microservice: http://localhost:8080/todo/swagger-ui
+- Edit counts microservice: http://localhost:8080/edits/swagger-ui
+
+The nginx reverse proxy automatically redirects requests to the Swagger UI to use the appropriate context path.
+
+After starting the microservices, you can run end-to-end tests with the following commands:
+
+```sh
+cd e2e-tests
+MICRONAUT_ENVIRONMENTS=prod ./gradlew test
+```
+
+The `docker` environment is used to change the service URLs to point to the reverse proxy.
+
 
 ## Viewing and editing the C4 model
 

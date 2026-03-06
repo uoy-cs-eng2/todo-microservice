@@ -2,6 +2,17 @@
 # todo-microservices Docker image.
 
 services:
+  # Reverse proxy (acting as "API layer")
+  nginx:
+    image: nginx:1-alpine
+    ports:
+      - 8080:8080
+    volumes:
+      - ./nginx-conf.d:/etc/nginx/conf.d:ro
+    depends_on:
+      - todo
+      - editcounts
+
   # Database server for todo-microservice
   tododb:
     image: mariadb:12
@@ -22,8 +33,6 @@ services:
   # Available from http://localhost:8080
   todo:
     image: todo-microservice:latest
-    ports:
-      - 8080:8080
     environment:
       DATASOURCES_DEFAULT_URL: jdbc:mariadb://tododb/tododb
       DATASOURCES_DEFAULT_USERNAME: *dbuser
@@ -55,8 +64,6 @@ services:
   # It doesn't have any controllers, so there is no point in exposing it to the outside.
   editcounts:
     image: edit-count-consumers:latest
-    ports:
-      - 8081:8081
     environment:
       DATASOURCES_EDITCOUNTS_URL: jdbc:mariadb://countsdb/counts
       DATASOURCES_EDITCOUNTS_USERNAME: *counts_dbuser
