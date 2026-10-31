@@ -57,7 +57,7 @@ http://localhost:8081/swagger-ui
 To try out the microservice running on its own Docker image, run these commands from this folder:
 
 ```sh
-cd todo-microservices
+cd todo-microservice
 ./gradlew dockerBuild
 cd ..
 
@@ -81,7 +81,7 @@ After starting the microservices, you can run end-to-end tests with the followin
 
 ```sh
 cd e2e-tests
-MICRONAUT_ENVIRONMENTS=prod ./gradlew test
+MICRONAUT_ENVIRONMENTS=docker ./gradlew test
 ```
 
 The `docker` environment is used to change the service URLs to point to the reverse proxy.
